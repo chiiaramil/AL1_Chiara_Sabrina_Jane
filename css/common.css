@@ -1,1 +1,169 @@
 /* CSS Code, der für alle Web Pages gleich ist und auf allen Web Pages eingebunden werden muss. */
+body {
+  font-family: "articulat-cf", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: "articulat-heavy-cf", sans-serif;
+  font-weight: 900;
+}
+
+h2 {
+  font-weight: 500;
+}
+
+h3 {
+  font-weight: 800;
+}
+
+h4 {
+  font-weight: 600;
+}
+
+h5 {
+  font-weight: 800;
+}
+
+h6 {
+  font-weight: 400;
+}
+
+button {
+  font-weight: 500;
+}
+
+nav,
+footer {
+  height: 40px;
+}
+
+main {
+  flex: 1;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ecf3c0;
+  padding: 10px 20px;
+  gap: 20px;
+}
+
+nav .logo {
+  width: 100%;
+  height: auto;
+  max-width: 50px;
+}
+
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-left: auto;
+}
+
+.nav_link {
+  display: flex;
+  gap: 20px;
+}
+
+.nav_link a {
+  text-decoration: none;
+  color: black;
+  font-size: 70%;
+}
+
+.search-container {
+  display: flex;
+  background-color: white;
+  border-radius: 20px;
+  padding: 5px 10px;
+  align-items: center;
+}
+
+.search-container input {
+  border: none;
+  outline: none;
+  background: transparent;
+  color: white;
+}
+
+.search-container button {
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container img {
+  width: 100%;
+  height: auto;
+  max-width: 20px;
+}
+
+.cart-icon img {
+  width: 100%;
+  height: auto;
+  max-width: 25px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ecf3c0;
+  padding: 10px 20px;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+footer .description {
+  flex: 1;
+  text-align: left;
+  font-size: 80%;
+}
+
+footer .name {
+  flex: 1;
+  text-align: center;
+  font-weight: 400;
+}
+
+footer .icons {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  align-items: center;
+}
+
+footer .icons img {
+  width: 100%;
+  height: auto;
+  max-width: 40px;
+}
+
+.scroll-top {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background-color: #303b1b;
+  border: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.scroll-top::before {
+  content: "↑";
+  color: white;
+  font-size: 24px;
+  position: absolute;
+  top: 2px;
+  left: 12px;
+}
