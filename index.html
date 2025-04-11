@@ -4,116 +4,165 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Biotiful</title>
+    <!-- Favicon noch einfügen <link rel="icon" href="favicon.png" type="image/png"> -->
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vhs3smb.css" />
   </head>
   <body>
-    <!-- Inhalte oberhalb des Javascripts einfügen -->
+    <!-- Navigation hier einfügen -->
     <nav>
-      <!-- Navigation hier einfügen -->
+      <img class="logo" src="images/Logo_BioTiful.png" alt="Logo BioTiful" />
+      <div class="nav-right">
+        <div class="nav_link">
+          <a href="index.html">HOME</a>
+          <a href="shop.html">SHOP</a>
+          <a href="game.html">BIOSAFARI</a>
+          <a href="about.html">ÜBER UNS</a>
+        </div>
+        <div class="search-container">
+          <input type="text" placeholder="Suche..." />
+          <button>
+            <img src="images/Icon_Lupe_Schwarz.png" alt="Lupe" />
+          </button>
+        </div>
+        <div class="cart-icon">
+          <a href=""
+            ><img src="images/Icon_Einkaufswagen.png" alt="Warenkorb"
+          /></a>
+          <!-- Eventuell Anzahl Elemente im Warenkorb? <span class="cart-count">2</span>-->
+        </div>
+      </div>
     </nav>
-    <header>
-      <!-- Hero Bereich -->
-      <img src="" alt="" />
-      <h2>NATÜRLICH SCHÖN</h2>
-      <h1>BIOTIFUL</h1>
-    </header>
-    <button>Nachhaltig werden</button>
-    <section id="angebot_index">
-      <h4>UNSER ANGEBOT</h4>
-      <div>
-        <img src="" alt="" />
-      </div>
-    </section>
-    <section>
-      <h4>WARUM BIOTIFUL</h4>
-      <h3>Mehr als nur ein Trend</h3>
-      <div>
-        <p class="zahlen_index">80%</p>
-        <h3>weniger Pestizide</h3>
-        <p>im Vergleich zu konventionellem Gemüse.</p>
-      </div>
-      <div>
-        <p class="zahlen_index">50%</p>
-        <h3>weniger Energieverbrauch</h3>
-        <p>um 30% weniger CO2-Emissionen im biologischen Anbau.</p>
-      </div>
-      <div>
-        <p class="zahlen_index">30%</p>
-        <h3>mehr Antioxidantien</h3>
-        <p>und Vitamin C.</p>
-      </div>
-      <button>Mehr erfahren</button>
-    </section>
-    <section>
-      <h4>AKTUELLES</h4>
-      <h3>Punkte sammeln und profitieren</h3>
-      <div>
-        <!-- Bilder Karousel -->
+    <main>
+      <section>
+        <!-- Hero Bereich -->
+        <img
+          src=""
+          alt="Bild von Früchten und Gemüse in einem braunen Holzkorb"
+        />
+        <h2>NATÜRLICH SCHÖN</h2>
+        <h1>BIOTIFUL</h1>
+      </section>
+      <a href="shop.html"><button>Nachhaltig werden</button></a>
+      <section id="angebot_index">
+        <h4>UNSER ANGEBOT</h4>
         <div>
-          <img src="" alt="Bild 1" />
-          <img src="" alt="Bild 2" />
-          <img src="" alt="Bild 3" />
+          <img src="images/Icon_Aubergine.png" alt="Aubergine Icon" />
+          <h5>Gemüse</h5>
+          <img src="images/Icon_Pfeil.png" alt="Pfeil Icon" />
         </div>
-        <!-- Button zum klicken auf das nächste Bild -->
-        <button></button>
-        <button></button>
+        <div>
+          <img src="images/Icon_Banane.png" alt="Banane Icon" />
+          <h5>Früchte</h5>
+          <img src="images/Icon_Pfeil.png" alt="Pfeil Icon" />
+        </div>
+        <div>
+          <img src="images/Icon_Karotte.png" alt="Karotte Icon" />
+          <h5>Wurzelgemüse</h5>
+          <img src="images/Icon_Pfeil.png" alt="Pfeil Icon" />
+        </div>
+        <div>
+          <img src="images/Icon_Kraut.png" alt="Kraut Icon" />
+          <h5>Kräuter</h5>
+          <img src="images/Icon_Pfeil.png" alt="Pfeil Icon" />
+        </div>
+      </section>
+      <section>
+        <h4>WARUM BIOTIFUL</h4>
+        <h3>Mehr als nur ein Trend</h3>
+        <div>
+          <h3 class="zahlen_index">80%</h3>
+          <h3>weniger Pestizide</h3>
+          <p>im Vergleich zu konventionellem Gemüse.</p>
+        </div>
+        <div>
+          <h3 class="zahlen_index">50%</h3>
+          <h3>weniger Energieverbrauch</h3>
+          <p>um 30% weniger CO2-Emissionen im biologischen Anbau.</p>
+        </div>
+        <div>
+          <h3 class="zahlen_index">30%</h3>
+          <h3>mehr Antioxidantien</h3>
+          <p>und Vitamin C.</p>
+        </div>
+        <!-- Button führt wohin?-->
+        <a href="about.html"><button>Mehr erfahren</button></a>
+      </section>
+      <section>
+        <h4>AKTUELLES</h4>
+        <h3>Punkte sammeln und profitieren</h3>
+        <div>
+          <!-- Bilder Karousel -->
+          <div>
+            <img src="" alt="Bild 1" />
+            <img src="" alt="Bild 2" />
+            <img src="" alt="Bild 3" />
+          </div>
+          <!-- Button zum klicken auf das nächste Bild -->
+          <button></button>
+          <button></button>
 
-        <!-- Punkte unter dem Karousel -->
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <h5>Wir belohnen dich beim Einkauf von Bioprodukten</h5>
-      <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-        adipisci, recusandae iste ducimus quam, ipsum ex ratione assumenda
-        quibusdam quisquam dolore, aliquam architecto asperiores.
-      </p>
-      <button>Spielen und punkten</button>
-    </section>
-    <section>
-      <h4>KUNDENBEWERTUNGEN</h4>
-      <h3>Das sind eure Meinungen</h3>
-      <div class="feedback_carousel">
-        <!-- Button links -->
-        <button></button>
-        <div class="card_index">
-          <!-- Kundenbild -->
-          <img src="" alt="Kundenbild" />
-          <h5>Ich bin ein Fan!</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel
-            totam incidunt fuga.
-          </p>
-          <div class="stars"></div>
-          <!-- Könnte man mit Datenbank verbinden -->
-          <div class="name">Fanni, 25</div>
+          <!-- Punkte unter dem Karousel -->
+          <span></span>
+          <span></span>
+          <span></span>
         </div>
-        <div class="card_index">
-          <!-- Kundenbild -->
-          <img src="" alt="Kundenbild" />
-          <h5>Ich bin ein Fan!</h5>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel
-            totam incidunt fuga.
-          </p>
-          <div class="stars"></div>
-          <!-- Könnte man mit Datenbank verbinden -->
-          <div class="name">Fanni, 25</div>
+        <h5>Wir belohnen dich beim Einkauf von Bioprodukten</h5>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+          adipisci, recusandae iste ducimus quam, ipsum ex ratione assumenda
+          quibusdam quisquam dolore, aliquam architecto asperiores.
+        </p>
+        <a href="game.html"><button>Spielen und punkten</button></a>
+      </section>
+      <section>
+        <h4>KUNDENBEWERTUNGEN</h4>
+        <h3>Das sind eure Meinungen</h3>
+        <div class="feedback_carousel">
+          <!-- Button links -->
+          <button></button>
+          <div class="card_index">
+            <!-- Kundenbild -->
+            <img src="" alt="Kundenbild" />
+            <h5>Ich bin ein Fan!</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel
+              totam incidunt fuga.
+            </p>
+            <div class="stars"></div>
+            <!-- Könnte man mit Datenbank verbinden -->
+            <h6 class="name">Fanni, 25</h6>
+          </div>
+          <div class="card_index">
+            <!-- Kundenbild -->
+            <img src="" alt="Kundenbild" />
+            <h5>Ich bin ein Fan!</h5>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel
+              totam incidunt fuga.
+            </p>
+            <div class="stars"></div>
+            <!-- Könnte man mit Datenbank verbinden -->
+            <h6 class="name">Fanni, 25</h6>
+          </div>
+          <!-- Button rechts -->
+          <button></button>
         </div>
-        <!-- Button rechts -->
-        <button></button>
-      </div>
-    </section>
-    <hr class="linie" />
+      </section>
+      <hr class="linie" />
+    </main>
     <!-- Footer hier einfügen -->
-    <footer class="footer">
-      <div>Das ist ein Schulprojekt und keine reale Website</div>
+    <footer>
+      <div class="description">
+        Das ist ein Schulprojekt und keine reale Website
+      </div>
       <div class="name">Chiara Sabrina Jane</div>
       <div class="icons">
-        <a href=""><img src="" alt="Icon Facebook" /></a>
-        <a href=""><img src="" alt="Icon Instagram" /></a>
+        <a href=""
+          ><img src="images/Icon_Facebook.png" alt="Icon Facebook"
+        /></a>
+        <a href=""><img src="images/Icon_Insta.png" alt="Icon Instagram" /></a>
         <a href=""><button class="scroll-top"></button></a>
       </div>
     </footer>
@@ -121,4 +170,3 @@
     <script src="js/databaseClient.js"></script>
   </body>
 </html>
-
