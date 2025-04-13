@@ -18,9 +18,9 @@
           <a href="index.html">HOME</a>
           <a href="shop.html">SHOP</a>
           <a href="game.html">BIOSAFARI</a>
-          <a href="about.html">ÜBER UNS</a>
+          <!-- <a href="about.html">ÜBER UNS</a>-->
         </div>
-        <div class="search-container">
+        <!-- <div class="search-container">
           <input type="text" placeholder="Suche..." />
           <button>
             <img src="images/Icon_Lupe_Schwarz.png" alt="Lupe" />
@@ -30,23 +30,31 @@
           <a href=""
             ><img src="images/Icon_Einkaufswagen.png" alt="Warenkorb"
           /></a>
-          <!-- Eventuell Anzahl Elemente im Warenkorb? <span class="cart-count">2</span>-->
-        </div>
+          Eventuell Anzahl Elemente im Warenkorb? <span class="cart-count">2</span>
+        </div>-->
+        <button class="menu-toggle" aria-label="Menü öffnen">
+          <img src="images/Icon_Menu.png" alt="Icon Menü" />
+        </button>
       </div>
     </nav>
     <main>
-      <section>
+      <header class="hero">
         <!-- Hero Bereich -->
         <img
-          src=""
+          src="images/HG_Bild_HERO-Bereich.jpg"
           alt="Bild von Früchten und Gemüse in einem braunen Holzkorb"
+          class="hero-img"
         />
-        <h2>NATÜRLICH SCHÖN</h2>
-        <h1>BIOTIFUL</h1>
-      </section>
+        <div class="hero-text">
+          <h2>NATÜRLICH SCHÖN</h2>
+          <h1>BIOTIFUL</h1>
+        </div>
+      </header>
+      <!-- Buttons richtig formatieren -> Können ins common css kommen, da es für alle Seiten gilt-->
       <a href="shop.html"><button>Nachhaltig werden</button></a>
       <section id="angebot_index">
         <h4>UNSER ANGEBOT</h4>
+        <!-- ToDO: Rechtecke hinter die Texte und Bilder wie in Wireframe -> Je nach dem ob diese Rechtecke noch woanders gebraucht werden ins index.css oder common.css speichern-->
         <div>
           <img src="images/Icon_Aubergine.png" alt="Aubergine Icon" />
           <h5>Gemüse</h5>
@@ -167,6 +175,6 @@
       </div>
     </footer>
 
-    <script src="js/databaseClient.js"></script>
+    <script src="js/menuToggle.js"></script>
   </body>
 </html>
