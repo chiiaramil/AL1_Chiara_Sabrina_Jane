@@ -12,12 +12,14 @@ body {
 h1 {
   font-family: "articulat-heavy-cf", sans-serif;
   font-weight: 900;
-  font-size: 140px;
+  /* clamp: Schrift wird nicht kleiner als 48px, nie grösser als 140px und skaliert sich dazwischen flexibel mit der Viewport-Grösse (vw) */
+  font-size: clamp(48px, 10vw, 140px);
 }
 
 h2 {
   font-weight: 500;
-  font-size: 80px;
+  /* clamp: Schrift wird nicht kleiner als 27px, nie grösser als 80px und skaliert sich dazwischen flexibel mit der Viewport-Grösse (vw) */
+  font-size: clamp(27px, 5vw, 80px);
 }
 
 h3 {
@@ -79,7 +81,7 @@ nav .logo {
 .nav_link a {
   text-decoration: none;
   color: black;
-  font-size: 70%;
+  font-size: 90%;
 }
 
 /*
@@ -117,14 +119,16 @@ nav .logo {
 }
 */
 
-.menu-toggle {
+.menu-toggle,
+.menu-close {
   display: none;
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.menu-toggle img {
+.menu-toggle img,
+.menu-close img {
   width: 30px;
   height: auto;
 }
@@ -141,7 +145,7 @@ nav .logo {
   width: 100%;
   height: auto;
   object-fit: cover;
-  object-position: center -200px;
+  object-position: center;
 }
 
 .hero-text {
@@ -217,24 +221,66 @@ footer .icons img {
 @media (max-width: 500px) {
   .nav_link {
     display: none;
-    flex-direction: column;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    background-color: #303b1b;
-    padding: 10px;
-    border-radius: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 999;
   }
 
   .nav_link.open {
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(6px);
+    z-index: 999;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .nav_link a {
+    font-size: 1.8rem;
+    padding: 10px 0;
+    width: 60%;
+    text-align: center;
+    border-bottom: 1px solid #aaa;
+  }
+
+  .nav_link a:last-child {
+    border-bottom: none;
   }
 
   .menu-toggle {
     display: block;
   }
 
+  .nav_link.open .menu-close {
+    display: block;
+  }
+
+  .menu-close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    background: none;
+    border: none;
+    cursor: pointer;
+  }
+  /*
+  h1 {
+    font-size: 43px;
+  }
+
+  h2 {
+    font-size: 27px;
+  } */
   /* ToDO: Für HERO Bereich gleich machen, dass sich es anpasst */
 }
