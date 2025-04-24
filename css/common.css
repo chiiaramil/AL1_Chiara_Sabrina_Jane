@@ -24,22 +24,25 @@ h2 {
 
 h3 {
   font-weight: 800;
+  font-size: clamp(15px, 3vw, 30px);
 }
 
 h4 {
   font-weight: 600;
+  font-size: clamp(11px, 3vw, 20px);
 }
 
 h5 {
   font-weight: 800;
+  font-size: clamp(11px, 3vw, 20px);
 }
 
 h6 {
   font-weight: 400;
 }
 
-button {
-  font-weight: 500;
+a {
+  text-decoration: none;
 }
 
 nav,
@@ -66,7 +69,7 @@ nav .logo {
   max-width: 50px;
 }
 
-.nav-right {
+.nav_right {
   display: flex;
   align-items: center;
   gap: 40px;
@@ -84,51 +87,16 @@ nav .logo {
   font-size: 90%;
 }
 
-/*
-.search-container {
-  display: flex;
-  background-color: white;
-  border-radius: 20px;
-  padding: 5px 10px;
-  align-items: center;
-}
-
-.search-container input {
-  border: none;
-  outline: none;
-  background: transparent;
-  color: white;
-}
-
-.search-container button {
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-.search-container img {
-  width: 100%;
-  height: auto;
-  max-width: 20px;
-}
-
-.cart-icon img {
-  width: 100%;
-  height: auto;
-  max-width: 25px;
-}
-*/
-
-.menu-toggle,
-.menu-close {
+.menu_toggle,
+.menu_close {
   display: none;
   background: none;
   border: none;
   cursor: pointer;
 }
 
-.menu-toggle img,
-.menu-close img {
+.menu_toggle img,
+.menu_close img {
   width: 30px;
   height: auto;
 }
@@ -141,14 +109,14 @@ nav .logo {
   overflow: hidden;
 }
 
-.hero-img {
+.hero_img {
   width: 100%;
   height: auto;
   object-fit: cover;
   object-position: center;
 }
 
-.hero-text {
+.hero_text {
   position: absolute;
   top: 85%;
   left: 50%;
@@ -158,7 +126,7 @@ nav .logo {
   line-height: 1;
 }
 
-.hero-text h1,
+.hero_text h1,
 h2 {
   margin: 0;
 }
@@ -199,7 +167,7 @@ footer .icons img {
   max-width: 40px;
 }
 
-.scroll-top {
+.scroll_top {
   width: 36px;
   height: 36px;
   border-radius: 50%;
@@ -209,7 +177,7 @@ footer .icons img {
   position: relative;
 }
 
-.scroll-top::before {
+.scroll_top::before {
   content: "↑";
   color: white;
   font-size: 24px;
@@ -258,15 +226,15 @@ footer .icons img {
     border-bottom: none;
   }
 
-  .menu-toggle {
+  .menu_toggle {
     display: block;
   }
 
-  .nav_link.open .menu-close {
+  .nav_link.open .menu_close {
     display: block;
   }
 
-  .menu-close {
+  .menu_close {
     position: absolute;
     top: 15px;
     right: 35px;
@@ -274,13 +242,4 @@ footer .icons img {
     border: none;
     cursor: pointer;
   }
-  /*
-  h1 {
-    font-size: 43px;
-  }
-
-  h2 {
-    font-size: 27px;
-  } */
-  /* ToDO: Für HERO Bereich gleich machen, dass sich es anpasst */
 }
