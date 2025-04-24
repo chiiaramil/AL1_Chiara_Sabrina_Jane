@@ -1,1 +1,140 @@
-/* CSS Code, den es nur für Start Page braucht */
+.button_light {
+  background-color: #dbe37a;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  display: block;
+  margin: 40px auto 0 auto;
+  font-size: clamp(11px, 3vw, 20px);
+  transition-duration: 0.4s;
+}
+
+.button_light:hover,
+.angebot_card:hover {
+  background-color: #97b166;
+}
+
+/* Angebot-Section ist von 40px von oben entfernt und hat links und rechts ein Padding von 16px und der Text ist zentriert. */
+#angebot {
+  padding-top: 40px;
+  padding-inline: clamp(16px, 8%, 150px);
+  text-align: center;
+}
+
+/* Karten sind in einem 2x2 Grid, haben voneinander jeweils eine Lücke von 20px und sind vom oberen Text 30px entfernt  */
+.card_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 30px;
+}
+
+/* Jede einzelne Karte hat eine bestimmte Farbe, haben runde Ecken, zentriert, das padding passt sich der Screenbeite an */
+.angebot_card {
+  background-color: #dbe37a;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  padding: clamp(1rem, 2vw, 2rem);
+  gap: clamp(5px, 2vw, 30px);
+  justify-content: flex-start;
+  transition-duration: 0.4s;
+}
+
+/* Das erste Bild beim Angebot-Teil hat diese bestimmte Grösse */
+.angebot_card img:first-child {
+  width: 20%;
+  min-width: 60px;
+  max-width: 100px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+/* Content ist untereinander gestapelt und 30px von links vom Bild entfernt */
+.card_content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-left: 30px;
+}
+
+/* Abstand rundherum wird entfernt */
+.card_text h5 {
+  margin: 0;
+}
+
+/* Pfeil-Bild passt sich der Screenbreite an */
+.arrow_icon {
+  margin-top: 5px;
+  width: 45px;
+  height: auto;
+}
+
+/* Vorteile: Hintergrund ist hellgrau, Text ist zentriert, Abstand innerhalb ist geregelt */
+.vorteile {
+  background-color: #e0e0e0;
+  text-align: center;
+  padding: 40px 20px;
+  margin-top: 60px;
+}
+
+.vorteile h4 {
+  margin-bottom: 10px;
+}
+
+.untertitel {
+  margin-top: -5px;
+}
+
+.vorteile_grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: -20px;
+  margin-left: 15%;
+  margin-right: 15%;
+  margin-top: 40px;
+  justify-items: center;
+}
+
+.vorteil_box {
+  max-width: 225px;
+  margin-top: -50px;
+}
+
+.vorteil_box .zahlen {
+  font-size: 70px;
+  margin-bottom: -30px;
+}
+
+/* RESPONSIVE ab max-width 500px */
+@media (max-width: 500px) {
+  .angebot_card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .angebot_card img:first-child {
+    margin-bottom: 15px;
+    align-self: center;
+  }
+
+  .card_content {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    margin-left: 0;
+  }
+
+  .card_text {
+    margin: 0;
+  }
+
+  .arrow_icon {
+    width: 30px;
+    margin-top: 0;
+  }
+
+  /* To-Do: Button light muss noch umgesetzt werden für 500px */
+}
