@@ -1,5 +1,5 @@
 .button_light {
-  background-color: #dbe37a;
+  background-color: #d8e080;
   border: none;
   border-radius: 25px;
   padding: 10px 20px;
@@ -70,22 +70,25 @@
   height: auto;
 }
 
-/* Vorteile: Hintergrund ist hellgrau, Text ist zentriert, Abstand innerhalb ist geregelt */
+/* Vorteile: Hintergrund ist hellgrau, Text ist zentriert, Abstand innerhalb ist geregelt, 60px vom oberen Teil entfernt */
 .vorteile {
-  background-color: #e0e0e0;
+  background-color: #cadb9c;
   text-align: center;
   padding: 40px 20px;
   margin-top: 60px;
 }
 
+/* 10px Abstand vom unteren Teil */
 .vorteile h4 {
   margin-bottom: 10px;
 }
 
+/* -5px Abstand vom oberen Teil */
 .untertitel {
   margin-top: -5px;
 }
 
+/* Zeigt die Vorteile nebeneinander in 3 Teilen an, sie haben zwischeneinander -20px Abstand (gap), sind links und rechts 15% entfernt, zentriert und 40px vom oberen Teil entfernt */
 .vorteile_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -97,13 +100,36 @@
 }
 
 .vorteil_box {
-  max-width: 225px;
-  margin-top: -50px;
+  max-width: 240px;
+  transition: transform 0.2s ease-in-out;
 }
 
-.vorteil_box .zahlen {
-  font-size: 70px;
+.vorteil_box:hover {
+  transform: scale(1.1);
+}
+
+/* Die grossen Prozentzahlen passen sich der Screenbreite an und sind -30px vom unteren Teil entfernt */
+.zahlen {
+  font-weight: 800;
+  font-size: clamp(40px, 5vw, 70px);
   margin-bottom: -30px;
+}
+
+.button_dark {
+  background-color: #303b1b;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin-top: 40px;
+  padding: 10px 20px;
+  display: block;
+  margin: 40px auto 0 auto;
+  font-size: clamp(11px, 3vw, 20px);
+  transition-duration: 0.4s;
+}
+
+.button_dark:hover {
+  background-color: #426728;
 }
 
 /* RESPONSIVE ab max-width 500px */
@@ -136,5 +162,61 @@
     margin-top: 0;
   }
 
+  /* Innerer Abstand vom Rand definiert und Text links ausgerichtet */
+  .vorteile {
+    padding: 40px 5px;
+    text-align: left;
+  }
+
+  /* Obere Texte, Titel und Untertitel werden wieder zentriert */
+  .vorteile h4,
+  .untertitel {
+    text-align: center;
+  }
+
+  /* Vorteil-Teile werden untereinander angezeigt, gap sorgt für den Abstand der einzelnen Teile, margin-top der Abstand zum oberen Text */
+  .vorteile_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    margin-top: 32px;
+  }
+
+  /* Elemente werden zentriert angezeigt, haben innerhalb einen bestimmten gap des Textes und der Zahlen, nehmen die volle Breite ein und haben keinen äusserlichen Abstand */
+  .vorteil_box {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    max-width: 100%;
+    margin: 0;
+    position: relative;
+  }
+
+  /* Zahlen haben eine bestimmte Breite, Element darf nicht schrumpfen, egal wie eng es ist mit flex-shrink*/
+  .zahlen {
+    width: 60px;
+    flex-shrink: 0;
+    line-height: 1;
+    position: relative;
+    top: 15px;
+  }
+
+  /* Elemente werden untereinander angezeigt, zentriert und sind links vom element entfernt */
+  .textgruppe {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 20px;
+  }
+
+  /* fetter Text hat unten noch etwas Abstand */
+  .textgruppe h3 {
+    margin: 0 0 6px 0;
+  }
+
+  /* feiner Text hat keinen Abstand */
+  .textgruppe p {
+    margin: 0;
+  }
   /* To-Do: Button light muss noch umgesetzt werden für 500px */
 }
