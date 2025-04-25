@@ -3,6 +3,7 @@ body {
   font-family: "articulat-cf", sans-serif;
   font-weight: 500;
   font-style: normal;
+  font-size: clamp(11px, 3vw, 20px);
   height: 100%;
   margin: 0;
   display: flex;
@@ -24,7 +25,7 @@ h2 {
 
 h3 {
   font-weight: 800;
-  font-size: clamp(15px, 3vw, 30px);
+  font-size: clamp(19px, 3vw, 30px);
 }
 
 h4 {
