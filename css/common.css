@@ -132,6 +132,13 @@ h2 {
   margin: 0;
 }
 
+.linie {
+  width: 90%;
+  height: 1px;
+  background-color: black;
+  margin: 40px auto;
+}
+
 footer {
   display: flex;
   justify-content: space-between;
@@ -142,16 +149,26 @@ footer {
   gap: 20px;
 }
 
-footer .description {
+.erklärung {
   flex: 1;
   text-align: left;
-  font-size: 80%;
+  font-size: clamp(12px, 1vw, 20px);
 }
 
-footer .name {
-  flex: 1;
+.linie_vertikal {
+  border-left: 1px solid black;
+  height: 30px;
+}
+
+.gruppenmitglieder {
+  margin-left: auto;
   text-align: center;
   font-weight: 400;
+  font-size: clamp(10px, 1vw, 20px);
+}
+
+.gruppenmitglieder span {
+  margin: 0 6px;
 }
 
 footer .icons {
@@ -242,5 +259,14 @@ footer .icons img {
     background: none;
     border: none;
     cursor: pointer;
+  }
+
+  .gruppenmitglieder {
+    text-align: left;
+  }
+
+  .gruppenmitglieder span {
+    display: block;
+    margin: 2px 0;
   }
 }
