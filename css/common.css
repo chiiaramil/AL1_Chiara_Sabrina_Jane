@@ -1,3 +1,8 @@
+/* Wenn man auf den Button im Footer klickt, bewegt sich die Seite smooth nach oben*/
+html {
+  scroll-behavior: smooth;
+}
+
 /* CSS Code, der für alle Web Pages gleich ist und auf allen Web Pages eingebunden werden muss. */
 body {
   font-family: "articulat-cf", sans-serif;
@@ -193,6 +198,7 @@ footer .icons img {
   border: none;
   cursor: pointer;
   position: relative;
+  transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .scroll_top::before {
@@ -202,6 +208,11 @@ footer .icons img {
   position: absolute;
   top: 2px;
   left: 12px;
+}
+
+.scroll_top:hover {
+  background-color: #426728;
+  transform: scale(1.1);
 }
 
 @media (max-width: 500px) {
