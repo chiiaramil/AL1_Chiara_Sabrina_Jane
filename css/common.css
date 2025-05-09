@@ -93,6 +93,10 @@ nav .logo {
   font-size: 90%;
 }
 
+.nav_link a.active {
+  font-weight: bold;
+}
+
 .menu_toggle,
 .menu_close {
   display: none;
@@ -135,6 +139,22 @@ nav .logo {
 .hero_text h1,
 h2 {
   margin: 0;
+}
+
+/* 10px Abstand vom unteren Teil */
+.titel {
+  margin-bottom: 10px;
+}
+
+/* -5px Abstand vom oberen Teil */
+.untertitel {
+  margin-top: -5px;
+}
+
+/* Obere Texte, Titel und Untertitel werden wieder zentriert */
+.titel,
+.untertitel {
+  text-align: center;
 }
 
 .linie {
