@@ -21,7 +21,7 @@
               alt="Schliessen Button"
             />
           </button>
-          <a href="index.html">HOME</a>
+          <a href="index.html" class="active">HOME</a>
           <a href="shop.html">SHOP</a>
           <a href="game.html">BIOSAFARI</a>
           <!-- <a href="about.html">ÜBER UNS</a>-->
@@ -49,7 +49,7 @@
         ><button class="button_light">Nachhaltig werden</button></a
       >
       <section id="angebot">
-        <h4>UNSER ANGEBOT</h4>
+        <h4 class="titel">UNSER ANGEBOT</h4>
         <div class="card_grid">
           <div class="angebot_card">
             <img src="images/Icon_Aubergine.png" alt="Aubergine Icon" />
@@ -106,7 +106,7 @@
         </div>
       </section>
       <section class="vorteile">
-        <h4>WARUM BIOTIFUL</h4>
+        <h4 class="titel">WARUM BIOTIFUL</h4>
         <h3 class="untertitel">Mehr als nur ein Trend</h3>
         <div class="vorteile_grid">
           <div class="vorteil_box">
@@ -133,29 +133,43 @@
         </div>
         <!-- Button führt wohin?-->
         <div class="vorteile_button">
-          <a href="about.html"
-            ><button class="button_dark">Mehr erfahren</button></a
+          <a href="shop.html"
+            ><button class="button_dark">Jetzt einkaufen</button></a
           >
         </div>
       </section>
       <section>
-        <h4>AKTUELLES</h4>
-        <h3>Punkte sammeln und profitieren</h3>
+        <h4 class="titel">AKTUELLES</h4>
+        <h3 class="untertitel">Punkte sammeln und profitieren</h3>
         <div>
           <!-- Bilder Karousel -->
-          <div>
-            <img src="" alt="Bild 1" />
-            <img src="" alt="Bild 2" />
-            <img src="" alt="Bild 3" />
+          <div class="slideshow-container">
+            <div class="slides fade">
+              <img src="/images/Gemüsekorb_Aktuelles_1.jpg" alt="Gemüsekorb" />
+            </div>
+            <div class="slides fade">
+              <img
+                src="/images/Gemüsekorb_Aktuelles_2.jpg"
+                alt="Mann nimmt eine Tomate aus dem Gemüsekorb"
+              />
+            </div>
+            <div class="slides fade">
+              <img
+                src="/images/Gemüsekorb_Aktuelles_3.jpg"
+                alt="Gemüsekörbe nebeneinander aufgestellt"
+              />
+            </div>
+            <!-- Button zum klicken auf das nächste Bild -->
+            <a class="vorher" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="nachher" onclick="plusSlides(1)">&#10095;</a>
           </div>
-          <!-- Button zum klicken auf das nächste Bild -->
-          <button></button>
-          <button></button>
-
+          <br />
           <!-- Punkte unter dem Karousel -->
-          <span></span>
-          <span></span>
-          <span></span>
+          <div>
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </div>
         </div>
         <h5>Wir belohnen dich beim Einkauf von Bioprodukten</h5>
         <p>
@@ -186,8 +200,8 @@
         </div>
       </section>
       <section>
-        <h4>ALLEINSTELLUNGSMERKMAL</h4>
-        <h3>Das macht uns besonders</h3>
+        <h4 class="titel">ALLEINSTELLUNGSMERKMAL</h4>
+        <h3 class="untertitel">Das macht uns besonders</h3>
         <div>
           <img src="images/Icon_Nachhaltig.jpg" alt="Icon Nachhaltigkeit" />
           <p>Nachhaltiger Anbau ohne Pestizide und ohne Kompromisse</p>
@@ -206,48 +220,8 @@
         </div>
       </section>
       <section>
-        <h4>KONTAKTFORMULAR</h4>
-        <h3>Hast du Fragen oder Anregungen?</h3>
-        <p>
-          Wir freuen uns auf deine Nachricht. Wir melden uns in der Regel
-          innerhalb von 1-3 Werktagen bei dir.
-        </p>
-        <form>
-          <input
-            type="text"
-            id="vorname"
-            name="vorname"
-            placeholder="Vorname"
-          />
-          <br />
-          <input
-            type="text"
-            id="nachname"
-            name="nachname"
-            placeholder="Nachname"
-          />
-          <br />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="E-Mail Adresse"
-          />
-          <br />
-          <textarea
-            name="nachricht"
-            id="nachricht"
-            rows="10"
-            cols="50"
-            placeholder="Deine Nachricht"
-          ></textarea>
-          <br />
-          <input type="submit" value="Absenden" />
-        </form>
-      </section>
-      <section>
-        <h4>KUNDENBEWERTUNGEN</h4>
-        <h3>Das sind eure Meinungen</h3>
+        <h4 class="titel">KUNDENBEWERTUNGEN</h4>
+        <h3 class="untertitel">Das sind eure Meinungen</h3>
         <div class="feedback_carousel">
           <!-- Button links -->
           <button></button>
@@ -304,5 +278,6 @@
     </footer>
 
     <script src="js/menu.js"></script>
+    <script src="js/slideshow.js"></script>
   </body>
 </html>
