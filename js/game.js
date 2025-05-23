@@ -1,12 +1,12 @@
 // Game
 let basket = document.getElementById('basket');
-let game_area = document.getElementById('game_area');
+let player = document.getElementById('player');
 let score_display = document.getElementById('score');
 let start_button = document.getElementById('start_button');
 
 let basket_position = 250; // Anfangsposition des Korbs
-let game_width = game_area.offsetWidth;
-let game_height = game_area.offsetHeight;
+let game_width = player.offsetWidth;
+let game_height = player.offsetHeight;
 let basket_width = basket.offsetWidth;
 let fruit_fall_speed = 2;
 let score = 0;
