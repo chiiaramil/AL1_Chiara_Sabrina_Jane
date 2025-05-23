@@ -1,6 +1,7 @@
 /* Wenn man auf den Button im Footer klickt, bewegt sich die Seite smooth nach oben*/
 html {
   scroll-behavior: smooth;
+  height: 100%;
 }
 
 /* CSS Code, der für alle Web Pages gleich ist und auf allen Web Pages eingebunden werden muss. */
@@ -54,6 +55,12 @@ a {
 nav,
 footer {
   height: 40px;
+}
+
+.page_wrapper {
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 main {
