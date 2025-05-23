@@ -55,58 +55,34 @@
       </div>
       </section>
       <section>
-        <h4 class="titel">Anmeldeformular</h4>
-        <h3 class="untertitel">Du willst Deine Treuepunkte nun einlösen?</h3>
-        <p>
-          Erstelle jetzt ein Konto, registriere dich bei BioTiful und löse deine Punkte ein!
-        </p>
-        <form>
-          <input
-            type="text"
-            id="vorname"
-            name="vorname"
-            placeholder="Vorname"
-          />
-          <br />
-          <input
-            type="text"
-            id="nachname"
-            name="nachname"
-            placeholder="Nachname"
-          />
-          <br />
-          <input
-            type="email"
-            id="email"
-            name="email"
-            placeholder="E-Mail Adresse"
-          />
-          <br />
-          
-          <!-- Passwortfeld -->
-          <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder="Passwort"
-            minlength="8"
-            required
-          />
-          <br />
-          
-          <!-- Passwortbestätigung -->
-          <input
-            type="password"
-            id="confirm_password"
-            name="confirm_password"
-            placeholder="Passwort bestätigen"
-            minlength="8"
-            required
-          />
-          <br />
-          <input type="submit" value="Absenden" />
-        </form>
-      </section>
+    <h4 class="titel">Anmeldeformular</h4>
+    <h3 class="untertitel">Du willst Deine Treuepunkte nun einlösen?</h3>
+    <p>
+      Erstelle jetzt ein Konto, registriere dich bei BioTiful und löse deine Punkte ein!
+    </p>
+    <div class="formular_center">
+        <div class="login_container">
+            <br>
+            <label for="first_name">Vorname:</label>
+            <input id="first_name" placeholder="Vorname" type="text"/>
+            <label for="last_name">Nachname:</label>
+            <input id="last_name" placeholder="Nachname" type="text" />
+            <label for="email">E-Mail:</label>
+            <input id="email" placeholder="E-Mail" type="email" />
+            
+            <label for="adress">Adresse:</label>
+            <label for="housenmbr">Hausnummer:</label>
+            <!-- Flex-Container für Hausnummer und Adresse -->
+            <div class="container-inline">
+                <input id="adress" placeholder="Adresse" type="text" />
+                <input id="housenmbr" placeholder="Nummer" type="number" min="1"/>
+            </div>
+            <label for="plz">Postleitzahl:</label>
+            <input id="plz" placeholder="PLZ" type="number" min="1"/>      
+            <button id="submit_button">Konto erstellen</button>
+        </div>
+    </div>
+</section>
       </main>
     <footer>
       <!-- Footer hier einfügen -->
@@ -131,6 +107,7 @@
     </footer>
 
     <script src="js/databaseClient.js"></script>
+    <script src="js/game.js"></script>
   </body>
 </html>
 

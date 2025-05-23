@@ -141,62 +141,78 @@
       <section>
         <h4 class="titel">AKTUELLES</h4>
         <h3 class="untertitel">Punkte sammeln und profitieren</h3>
-        <div>
+        <div class="aktuelles_wrapper">
           <!-- Bilder Karousel -->
-          <div class="slideshow-container">
+          <div class="slideshow_container">
             <div class="slides fade">
-              <img src="/images/Gemüsekorb_Aktuelles_1.jpg" alt="Gemüsekorb" />
+              <div class="slide_wrapper">
+                <img
+                  src="/images/Gemüsekorb_Aktuelles_1.jpg"
+                  alt="Gemüsekorb"
+                />
+                <a class="vorher" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nachher" onclick="plusSlides(1)">&#10095;</a>
+              </div>
             </div>
             <div class="slides fade">
-              <img
-                src="/images/Gemüsekorb_Aktuelles_2.jpg"
-                alt="Mann nimmt eine Tomate aus dem Gemüsekorb"
-              />
+              <div class="slide_wrapper">
+                <img
+                  src="/images/Gemüsekorb_Aktuelles_2.jpg"
+                  alt="Mann nimmt eine Tomate aus dem Gemüsekorb"
+                />
+                <a class="vorher" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nachher" onclick="plusSlides(1)">&#10095;</a>
+              </div>
             </div>
             <div class="slides fade">
-              <img
-                src="/images/Gemüsekorb_Aktuelles_3.jpg"
-                alt="Gemüsekörbe nebeneinander aufgestellt"
-              />
+              <div class="slide_wrapper">
+                <img
+                  src="/images/Gemüsekorb_Aktuelles_3.jpg"
+                  alt="Gemüsekörbe nebeneinander aufgestellt"
+                />
+                <a class="vorher" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nachher" onclick="plusSlides(1)">&#10095;</a>
+              </div>
             </div>
-            <!-- Button zum klicken auf das nächste Bild -->
-            <a class="vorher" onclick="plusSlides(-1)">&#10094;</a>
-            <a class="nachher" onclick="plusSlides(1)">&#10095;</a>
+            <!-- Punkte unter dem Karousel -->
+            <div class="dots_container">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
           </div>
-          <br />
-          <!-- Punkte unter dem Karousel -->
-          <div>
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
+          <div class="aktuelles_text">
+            <h5>Wir belohnen dich beim Einkauf von Bioprodukten</h5>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
+              adipisci, recusandae iste ducimus quam, ipsum ex ratione assumenda
+              quibusdam quisquam dolore, aliquam architecto asperiores.
+            </p>
+            <a href="game.html"
+              ><button class="button_dark">Spielen und punkten</button></a
+            >
           </div>
         </div>
-        <h5>Wir belohnen dich beim Einkauf von Bioprodukten</h5>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae
-          adipisci, recusandae iste ducimus quam, ipsum ex ratione assumenda
-          quibusdam quisquam dolore, aliquam architecto asperiores.
-        </p>
-        <a href="game.html"
-          ><button class="button_dark">Spielen und punkten</button></a
-        >
       </section>
-      <section>
-        <div>
-          <h3>1000+</h3>
-          <p>Bio-Produkte im Sortiment</p>
-        </div>
-        <div>
-          <h3>96%</h3>
-          <p>Regional bezogen</p>
-        </div>
-        <div>
-          <h3>3 Tage</h3>
-          <p>durchschnittliche Lieferzeit</p>
-        </div>
-        <div>
-          <h3>100%</h3>
-          <p>plastikfreie Verpackung</p>
+      <br />
+      <section class="infos_section">
+        <div class="infos_wrapper">
+          <div class="info_box">
+            <h3>1000+</h3>
+            <p>Bio-Produkte im Sortiment</p>
+          </div>
+          <div class="info_box">
+            <h3>96%</h3>
+            <p>Regional bezogen</p>
+          </div>
+          <div class="info_box">
+            <h3>3 Tage</h3>
+            <p>durchschnittliche Lieferzeit</p>
+          </div>
+          <div class="info_box">
+            <h3>100%</h3>
+            <p>plastikfreie Verpackung</p>
+          </div>
         </div>
       </section>
       <section>
