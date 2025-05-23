@@ -3,21 +3,132 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home Biotiful</title>
+    <title>Shop Biotiful</title>
     <link rel="stylesheet" href="css/common.css" />
     <link rel="stylesheet" href="css/shop.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vhs3smb.css" />
   </head>
   <body>
-    <!-- Inhalte oberhalb des Javascripts einfügen -->
-    <nav>
-      <!-- Navigation hier einfügen -->
+    <nav id="nav">
+      <img class="logo" src="images/Logo_BioTiful.png" alt="Logo BioTiful" />
+      <div class="nav_right">
+        <div class="nav_link">
+          <button class="menu_close" aria-label="Menü schliessen">
+            <img src="images/Icon_Menü_schliessen.png" alt="Schliessen Button" />
+          </button>
+          <a href="index.html" class="active">HOME</a>
+          <a href="shop.html">SHOP</a>
+          <a href="game.html">BIOSAFARI</a>
+        </div>
+        <button class="menu_toggle" aria-label="Menü öffnen">
+          <img src="images/Icon_Menu.png" alt="Icon Menü" />
+        </button>
+      </div>
     </nav>
-    <header><!-- Hero Bereich --></header>
-    <footer>
-      <!-- Footer hier einfügen -->
-    </footer>
 
-    <script src="js/databaseClient.js"></script>
+    <header class="hero">
+      <img
+        src="images/HG_Bild_HERO-Bereich_klein.jpg"
+        alt="Bild von Früchten und Gemüse in einem braunen Holzkorb"
+        class="hero_img"
+      />
+      <div class="hero_text">
+        <h2>NATÜRLICH SCHÖN</h2>
+        <h1>BIOTIFUL</h1>
+      </div>
+    </header>
+
+    <section class="produkte_section">
+      <h2 class="produkte_section_h2">Gemüse</h2>
+      <div class="produkte_grid">
+        <div class="produkt">
+          <img src="images/Produktbild_Kürbis.jpeg" alt="Produktbild Zucchini" class="produkt_img" />
+          <h2 class="produkt_h2">4.95</h2>
+          <h3 class="produkt_h3">Zucchini</h3>
+          <h4 class="produkt_h4">250g 1.98/100g</h4>
+        </div>
+        <div class="produkt">
+          <img src="images/Produktbild_braune_Pilze.jpeg" alt="Braune Champignons" class="produkt_img" />
+          <h2 class="produkt_h2">3.95</h2>
+          <h3 class="produkt_h3">Braune Champignons</h3>
+          <h4 class="produkt_h4">250g 1.58/100g</h4>
+        </div>
+        <div class="produkt">
+          <img src="images/Produktbild_Auberginen.jpeg" alt="Auberginen" class="produkt_img" />
+          <h2 class="produkt_h2">3.60</h2>
+          <h3 class="produkt_h3">Auberginen</h3>
+          <h4 class="produkt_h4">1kg 0.36/100g</h4>
+        </div>
+        <div class="produkt">
+          <img src="images/Produktbild_Brokkoli.jpeg" alt="Brokkoli" class="produkt_img" />
+          <h2 class="produkt_h2">2.90</h2>
+          <h3 class="produkt_h3">Brokkoli</h3>
+          <h4 class="produkt_h4">250g 1.16/100g</h4>
+        </div>
+        <div class="produkt">
+          <img src="images/Produktbild_Kürbis.jpeg" alt="Kürbis" class="produkt_img" />
+          <h2 class="produkt_h2">2.75</h2>
+          <h3 class="produkt_h3">Kürbis</h3>
+          <h4 class="produkt_h4">250g 1.10/100g</h4>
+        </div>
+        <div class="produkt">
+          <img src="images/Produktbild_Mais.jpeg" alt="Maiskolben" class="produkt_img" />
+          <h2 class="produkt_h2">3.40</h2>
+          <h3 class="produkt_h3">Maiskolben</h3>
+          <h4 class="produkt_h4">250g 1.36/100g</h4>
+        </div>
+        <div class="produkt">
+          <img src="images/Produktbild_Paprika.jpeg" alt="Paprika Mix" class="produkt_img" />
+          <h2 class="produkt_h2">4.20</h2>
+          <h3 class="produkt_h3">Paprika Mix</h3>
+          <h4 class="produkt_h4">250g 1.68/100g</h4>
+        </div>
+        <div class="produkt">
+          <img src="images/Produktbild_Rotkohl.jpeg" alt="Rotkohl" class="produkt_img" />
+          <h2 class="produkt_h2">2.50</h2>
+          <h3 class="produkt_h3">Rotkohl</h3>
+          <h4 class="produkt_h4">250g 1.00/100g</h4>
+        </div>
+        <div class="produkt">
+          <img src="images/Produktbild_Spinat.jpeg" alt="Blattspinat" class="produkt_img" />
+          <h2 class="produkt_h2">3.60</h2>
+          <h3 class="produkt_h3">Blattspinat</h3>
+          <h4 class="produkt_h4">250g 1.44/100g</h4>
+        </div>
+        <div class="produkt">
+          <img src="images/Produktbild_Rotkohl.jpeg" alt="Karotten" class="produkt_img" />
+          <h2 class="produkt_h2">2.20</h2>
+          <h3 class="produkt_h3">Karotten</h3>
+          <h4 class="produkt_h4">250g 0.88/100g</h4>
+        </div>
+        <div class="produkt">
+          <img src="images/Produktbild_Wirz.jpeg" alt="Wirz" class="produkt_img" />
+          <h2 class="produkt_h2">2.80</h2>
+          <h3 class="produkt_h3">Wirz (Wirsing)</h3>
+          <h4 class="produkt_h4">250g 1.12/100g</h4>
+        </div>
+        <div class="produkt">
+          <img src="images/Produktbild_Rotkohl.jpeg" alt="Fenchel" class="produkt_img" />
+          <h2 class="produkt_h2">3.10</h2>
+          <h3 class="produkt_h3">Fenchel</h3>
+          <h4 class="produkt_h4">250g 1.24/100g</h4>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="erklärung">Das ist ein Schulprojekt und keine reale Website</div>
+      <div class="linie_vertikal"></div>
+      <div class="gruppenmitglieder">
+        <span>Chiara</span>
+        <span>Sabrina</span>
+        <span>Jane</span>
+      </div>
+      <div class="icons">
+        <a href="https://www.facebook.com/"><img src="images/Icon_Facebook.png" alt="Facebook Icon" /></a>
+        <a href="https://www.instagram.com/"><img src="images/Icon_Insta.png" alt="Instagram Icon" /></a>
+        <a href="#nav"><button class="scroll_top">↑</button></a>
+      </div>
+    </footer>
   </body>
 </html>
-
