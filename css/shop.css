@@ -1,1 +1,75 @@
-
+.produkte_section {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  
+  .produkte_section_h2 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+  }
+  
+  .produkte_grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 1.5rem;
+    width: 95vw;
+    padding: 0;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .produkt {
+    text-align: center;
+  }
+  
+  .produkt_img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 4px;
+    background-color: #ccc;
+  }
+  
+  .produkt_h2 {
+    font-size: 1.5rem;
+    margin: 0.5rem 0 0;
+    font-weight: bold;
+  }
+  
+  .produkt_h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 0.2rem 0;
+    text-transform: none; 
+  }
+  
+  .produkt_h4 {
+    font-size: 1rem;
+    font-weight: normal;
+    color: #555;
+    margin: 0;
+  }
+  
+  /* Tablet */
+  @media (max-width: 1200px) {
+    .produkte_grid {
+      grid-template-columns: repeat(6, 1fr);
+    }
+  }
+  
+  /* Kleine Tablets */
+  @media (max-width: 900px) {
+    .produkte_grid {
+      grid-template-columns: repeat(4, 1fr);
+    }
+  }
+  
+  /* Smartphones */
+  @media (max-width: 600px) {
+    .produkte_grid {
+      grid-template-columns: repeat(2, 1fr);
+    }
+  }
+  
