@@ -1,7 +1,7 @@
 #game_container {
     text-align: center;
     margin-top: 20px;
-    background-color: #f0f8ff;
+    background-color: #cadb9c;
     font-family: Arial, sans-serif;
     margin: 0;
     display: flex;
@@ -15,8 +15,8 @@
     position: relative;
     width: 600px;
     height: 600px;
-    background-color: #e0f7fa;
-    border: 2px solid #00796b;
+    background-color: #cadb9c;
+    border: 2px solid #426728;
     overflow: hidden;
     margin-bottom: 20px;
 }
@@ -27,7 +27,7 @@
     left: 250px;
     width: 100px;
     height: 50px;
-    background-color: #8bc34a;
+    background-color: #b4c47c;
     border-radius: 20px;
 }
 
@@ -45,13 +45,13 @@
 #score {
     font-size: 20px;
     font-weight: bold;
-    color: #00796b;
+    color: #426728;
     margin-top: 10px;
 }
 
 #start_button {
     padding: 10px 20px;
-    background-color: #00796b;
+    background-color: #426728;
     color: white;
     border: none;
     border-radius: 5px;
@@ -60,6 +60,78 @@
 }
 
 #start_button:hover {
-    background-color: #004d40;
+    background-color: #426728;
 }
 
+
+/*CSS für das Form*//* Flexbox-Container für die gesamte Seite, um das Formular zu zentrieren */
+.formular_center {
+    display: flex;               /* Flexbox aktivieren */
+    justify-content: center;     /* Zentriert den Container horizontal */
+    align-items: center;         /* Zentriert den Container vertikal */
+    height: 100vh;               /* Setzt die Höhe des Containers auf die volle Bildschirmhöhe */
+}
+
+/* Container für das Formular */
+.login_container,
+.text-container {
+    margin: 12px 0px 12px 0px;
+    padding: 0px 12px 12px 12px;
+}
+
+/* Formular Container Styling */
+.login_container {
+    width: 500px;
+    border: 5px solid #5F7a3e;
+    border-radius: 12px;
+}
+
+/* Allgemeines Styling für die Felder */
+#first_name,
+#last_name, 
+#email,
+#adress,
+#housenmbr,
+#plz {
+    background-color: #f1f3e8;   /* Heller Hintergrund für alle Eingabefelder */
+    height: 32px;                  /* Setzt die Höhe der Eingabefelder */
+    margin-bottom: 12px;           /* Abstand zwischen den Feldern */
+}
+
+/* Container für Hausnummer und PLZ nebeneinander */
+.container-inline {
+    display: flex;                 /* Flexbox aktivieren */
+    gap: 12px;                     /* Abstand zwischen den Feldern */
+    margin-bottom: 12px;           /* Abstand unten */
+}
+
+/* Styling für Hausnummer und PLZ Felder */
+#housenmbr,
+#plz {
+    width: 80px;                   /* Breite der Felder auf 50px setzen */
+    margin-bottom: 0;              /* Kein zusätzlicher Abstand unten */
+}
+
+/* Styling für Labels */
+label {
+    display: block;               /* Stellt sicher, dass das Label in einer neuen Zeile erscheint */
+    margin-bottom: 5px;           /* Fügt etwas Abstand zwischen Label und Eingabefeld hinzu */
+    font-size: medium;
+    font-weight: 100;             /* Optional: Schriftgewicht für die Labels */
+}
+
+/* Styling für den Button */
+#submit_button {
+    display: block;
+    margin-top: 3%;
+    background-color: #333f23;    /* Button Hintergrundfarbe */
+    color: #e6e7e4;               /* Button Textfarbe */                 
+    padding: 10px;                /* Padding für den Button */
+    border: none;                 /* Entfernt den Standardrahmen */
+    border-radius: 4px;           /* Abgerundete Ecken für den Button */
+    cursor: pointer;             /* Zeigt einen Finger bei der Maus an, wenn man über den Button fährt */
+}
+
+#submit_button:hover {
+    background-color: #426728;    /* Button Hintergrundfarbe beim Hover */
+}
