@@ -101,8 +101,8 @@ function createFruit() {
     if (isGood) {
         // Zufällig zwischen Apfel und Banane wählen
         fruit.style.backgroundImage = Math.random() < 0.5
-            ? "url('../images/apple.svg')"
-            : "url('../images/banana.svg')";
+            ? "url('/images/apple.svg')"
+            : "url('/images/banana.svg')";
     }
 
     // Zufällige Position am oberen Rand des Spielbereichs
