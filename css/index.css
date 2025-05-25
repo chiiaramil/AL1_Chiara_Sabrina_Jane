@@ -29,6 +29,10 @@
   margin-top: 30px;
 }
 
+.card_grid a {
+  color: black;
+}
+
 /* Jede einzelne Karte hat eine bestimmte Farbe, haben runde Ecken, zentriert, das padding passt sich der Screenbeite an */
 .angebot_card {
   background-color: #dbe37a;
@@ -41,8 +45,8 @@
   transition-duration: 0.4s;
 }
 
-/* Das erste Bild beim Angebot-Teil hat diese bestimmte Grösse */
-.angebot_card img:first-child {
+/* Die Bilder beim Angebot-Teil haben diese bestimmte Grösse */
+.angebot_card img {
   width: 20%;
   min-width: 60px;
   max-width: 100px;
@@ -274,6 +278,45 @@
 
 .info_box:hover {
   transform: scale(1.1);
+}
+
+/* Alleinstellungsmerkmal */
+.alleinstellungsmerkmal {
+  text-align: center;
+  padding: 2rem;
+}
+
+.highlight_grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 2rem;
+  max-width: 1000px;
+  margin: 2rem auto;
+}
+
+.highlight_box {
+  background-color: #dbe37a;
+  border-radius: 1rem;
+  padding: 1.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  text-align: left;
+  transition: transform 0.2s ease-in-out;
+}
+
+.highlight_box:hover {
+  transform: scale(1.1);
+}
+
+.highlight_box img {
+  width: 75px;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.highlight_box p {
+  margin: 0;
 }
 
 /* RESPONSIVE ab max-width 500px */
