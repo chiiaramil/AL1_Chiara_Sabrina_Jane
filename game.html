@@ -1,104 +1,78 @@
 <!DOCTYPE html>
 <html lang="de">
-
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Game</title>
-  <link rel="stylesheet" href="css/common.css" />
-  <link rel="stylesheet" href="css/game.css" />
-</head>
-
-<body>
-  <div class="page_wrapper">
-    <!-- Navigation -->
-    <nav id="nav">
-      <img class="logo" src="images/Logo_BioTiful.png" alt="Logo BioTiful" />
-      <div class="nav_right">
-        <div class="nav_link">
-          <button class="menu_close" aria-label="Menü schliessen">
-            <img src="images/Icon_Menü_schliessen.png" alt="Schliessen Button" />
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/game.css" />
+  </head>
+  
+  <body>
+    <div class="page_wrapper">
+      <!-- Navigation hier einfügen -->
+      <nav id="nav">
+        <img class="logo" src="images/Logo_BioTiful.png" alt="Logo BioTiful" />
+        <div class="nav_right">
+          <div class="nav_link">
+            <button class="menu_close" aria-label="Menü schliessen">
+              <img
+                src="images/Icon_Menü_schliessen.png"
+                alt="Schliessen Button"
+              />
+            </button>
+            <a href="index.html">HOME</a>
+            <a href="shop.html">SHOP</a>
+            <a href="game.html" class="active">BIOSAFARI</a>
+            <!-- <a href="about.html">ÜBER UNS</a>-->
+          </div>
+          <button class="menu_toggle" aria-label="Menü öffnen">
+            <img src="images/Icon_Menu.png" alt="Icon Menü" />
           </button>
-          <a href="index.html">HOME</a>
-          <a href="shop.html">SHOP</a>
-          <a href="game.html" class="active">BIOSAFARI</a>
-          <!-- <a href="about.html">ÜBER UNS</a>-->
         </div>
-        <button class="menu_toggle" aria-label="Menü öffnen">
-          <img src="images/Icon_Menu.png" alt="Icon Menü" />
-        </button>
-      </div>
-    </nav>
+      </nav>
+    <!-- Inhalte oberhalb des Javascripts einfügen -->
     <main>
       <header class="hero">
         <!-- Hero Bereich -->
-        <img src="images/HG_Bild_HERO-Bereich_Game.jpg" alt="Bild von Früchten und Gemüse in einem braunen Holzkorb"
-          class="hero_img" />
+        <img
+          src="images/HG_Bild_HERO-Bereich_Game.jpg"
+          alt="Bild von Früchten und Gemüse in einem braunen Holzkorb"
+          class="hero_img"
+        />
         <div class="hero_text">
           <h2>GEMÜSE-SPIEL</h2>
           <h1>BIOSAFARI</h1>
         </div>
       </header>
-      <!-- Game Container -->
-      <section class="game_container">
-        <div class="game_header">
-          <div class="score">Punkte: <span id="score">0</span></div>
-          <div class="timer">Zeit: <span id="timer">60</span>s</div>
-        </div>
-        <div id="game_area">
-          <div id="basket"></div>
-        </div>
-        <button id="start_game">Spiel starten</button>
+      <!--Game-->
+      <section>
+        <div id="game_container">
+          <div id="player">
+              <div id="basket"></div>
+          </div>
+          <div id="score">Punkte: 0</div>
+          <button id="start_button">Spiel Starten</button>
+      </div>
       </section>
-      <!-- Formular -->
-      <section class="collect_points hidden">
-        <h4 class="titel" style="margin-top: 0%; padding-top: 5%;">Anmeldeformular</h4>
-        <h3 class="untertitel">Du willst Deine Treuepunkte nun einlösen?</h3>
-        <p id="formular_beschrieb">Erstelle jetzt ein Konto, registriere dich bei BioTiful und löse deine Punkte ein!
-        </p>
-
-        <div class="anmeldeformular">
-          <form>
-            <div id="form_fields">
-              <label for="gender">Anrede</label>
-              <select id="gender" name="gender">
-                <option value="" selected></option>
-                <option value="Herr">Herr</option>
-                <option value="Frau">Frau</option>
-              </select>
-              <div class="short_fields">
-                <div class="field">
-                  <label for="first_name">Vorname*</label>
-                  <input placeholder="Max" type="text" name="first_name" id="first_name" required />
-                  <div class="error_message" id="first_name_error"></div>
-                </div>
-                <div class="field">
-                  <label for="last_name">Nachname*</label>
-                  <input placeholder="Mustermann" type="text" name="last_name" id="last_name" required />
-                  <div class="error_message" id="last_name_error"></div>
-                </div>
-              </div>
-
-              <label for="email">E-Mail-Adresse*</label>
-              <input placeholder="max.mustermann@gmail.com" type="email" name="email" id="email" required />
-              <div class="error_message" id="email_error"></div>
-
-              <label for="password">Passwort*</label>
-              <input placeholder="Foi2@#äüs$#°" type="password" name="password" id="password" required />
-              <div class="error_message" id="password_error"></div>
-            </div>
-            <button id="submit_button" type="submit">
-              <span class="btn_text">Konto erstellen</span>
-              <div class="loader" id="form_spinner" style="display: none;"></div>
-            </button>
-            <div id="success_message" class="success_message"></div>
-          </form>
-        </div>
-      </section>
-
-    </main>
+  <section class="collect_points">
+    <h4 class="titel" style="margin-top: 0%; padding-top: 5%;">Anmeldeformular</h4>
+    <h3 class="untertitel">Du willst Deine Treuepunkte nun einlösen?</h3>
+    <p style="text-align: center;">Erstelle jetzt ein Konto, registriere dich bei BioTiful und löse deine Punkte ein!</p>
+    <!-- Formular -->
+     <div class="anmeldeformular">
+     <form>
+        <input id="formular_field" placeholder="Vorname" type="text" name="first_name" required />
+        <input id="formular_field" placeholder="Nachname" type="text" name="last_name" required />
+        <input id="formular_field" placeholder="E-Mail-Adresse" type="email" name="email" required />
+        <input id="formular_field" placeholder="Passwort" type="password" name="password" required />
+        <button type="submit">Konto erstellen</button>
+     </form>
+     </div>
+  </section>
+      </main>
     <footer>
-      <!-- Footer -->
+      <!-- Footer hier einfügen -->
       <div class="erklärung">
         Das ist ein Schulprojekt und keine reale Website
       </div>
@@ -109,14 +83,20 @@
         <span>Jane</span>
       </div>
       <div class="icons">
-        <a href="https://www.facebook.com/"><img src="images/Icon_Facebook.png" alt="Icon Facebook" /></a>
-        <a href="https://www.instagram.com/"><img src="images/Icon_Insta.png" alt="Icon Instagram" /></a>
+        <a href="https://www.facebook.com/"
+          ><img src="images/Icon_Facebook.png" alt="Icon Facebook"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img src="images/Icon_Insta.png" alt="Icon Instagram"
+        /></a>
         <a href="#nav"><button class="scroll_top">↑</button></a>
       </div>
     </footer>
-    <script src="js/databaseClient.js"></script>
-    <script src="js/form.js"></script>
-    <script src="js/game.js"></script>
-</body>
 
+    <script src="js/databaseClient.js"></script>
+    <script src="js/game.js"></script>
+    <script src="js/form.js"></script>
+    </div>
+  </body>
 </html>
+
