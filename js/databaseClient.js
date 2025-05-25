@@ -65,7 +65,7 @@ const databaseClient = {
 
 /*
 Den folgenden Code demonstriert die Verwendung von executeSqlQuery und insertInto. 
-*/
+
 const testRun = async () => {
   const users = await databaseClient.executeSqlQuery("SELECT * FROM users");
   // Das erste Element result[0] enthält Meta Informationen der Datenbank, das lassen wir weg. Die eigentlichen Daten sind in result[1]
@@ -76,4 +76,5 @@ const testRun = async () => {
     email: "myEmailAddress",
   });
 };
+*/
 
