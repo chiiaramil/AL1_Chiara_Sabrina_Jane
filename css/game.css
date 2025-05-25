@@ -1,137 +1,188 @@
-#game_container {
+    /* Form-Beschrieb-Zentrierung */
+    #formular_beschrieb {
+      text-align: center;
+    }
+
+    .collect_points {
+      height: 100vh;
+    }
+
+    .short_fields {
+      display: flex;
+      gap: 3rem;
+      margin-bottom: 3%;
+    }
+
+    .short_fields .field {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      max-width: 40%;
+    }
+
+    .short_fields .field input {
+      padding: 10%;
+    }
+
+
+    .anmeldeformular {
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30vh;
+    }
+
+    form {
+      background-color: #ffffff;
+      font-family: "articulat-cf", sans-serif;
+      padding: 6vh;
+      border-radius: 10px;
+      box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+      width: 100%;
+      max-width: 45vh;
+      margin-top: 30vh;
+    }
+
+    label {
+      color: #1c4316;
+      font-weight: 700;
+      font-size: 2vh;
+    }
+
+    input[type="text"],
+    input[type="email"],
+    input[type="password"] {
+      width: 95%;
+      padding: 3%;
+      margin-bottom: 3%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      background-color: #f0f4ef;
+    }
+
+    #gender {
+      display: block;
+      width: 30%;
+      padding: 3%;
+      margin-bottom: 3%;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+      background-color: #f0f4ef;
+    }
+
+    input::placeholder {
+      color: #7a7a7a;
+      font-style: italic;
+      font-size: 1.6vh;
+    }
+
+    input:focus {
+      border-color: #7bc96f;
+      outline: none;
+      box-shadow: 0 0 3px rgba(50, 82, 45, 0.7);
+    }
+
+    input:hover {
+      border-color: #7bc96f;
+      box-shadow: 0 0 3px rgba(50, 82, 45, 0.7);
+      cursor: auto;
+    }
+
+    .error_message {
+    color: red;
+    font-size: 1.4vh;
+    font-style: italic;
+  }
+
+    button {
+      width: 40%;
+      margin-top: 3%;
+      padding: 8px;
+      background-color: #1c4316;
+      border: none;
+      color: white;
+      font-size: 1rem;
+      border-radius: 40px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #7bc96f;
+    }
+
+    .loader {
+      border: 4px solid #f3f3f3;
+      border-radius: 50%;
+      border-top: 4px solid #93bc89;
+      width: 20px;
+      height: 20px;
+      margin-left: 8px;
+      display: inline-block;
+      vertical-align: middle;
+      animation: spin 1s linear infinite;
+    }
+
+    @keyframes spin {
+      0% { transform: rotate(0deg); }
+      100% { transform: rotate(360deg); }
+    }
+
+    .success-message {
+    margin-top: 1rem;
+    font-size: 0.9rem;
+    font-style: italic;
+    color: #1c4316;
     text-align: center;
-    margin-top: 20px;
-    background-color: #cadb9c;
-    font-family: Arial, sans-serif;
-    margin: 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: flex-start;
-    min-height: 100vh; /* Damit die Seite den gesamten Bildschirm ausfüllt */
-}
+    max-width: 400px;
+    }
 
-#game_area {
-    position: relative;
-    width: 600px;
-    height: 600px;
-    background-color: #cadb9c;
-    border: 2px solid #426728;
-    overflow: hidden;
-    margin-bottom: 20px;
-}
+    /* Responsiveness */
+    @media (min-width: 800px) {
+      #formular_beschrieb {
+        margin-bottom: 6vh;
+      }
+    }
 
-#basket {
-    position: absolute;
-    bottom: 20px;
-    left: 250px;
-    width: 100px;
-    height: 50px;
-    background-color: #b4c47c;
-    border-radius: 20px;
-}
+    @media (max-width: 800px) {
+      .short_fields {
+        flex-direction: column;
+        gap: 0%;
+      }
+      form {
+        margin-top: 52vh;
+      }
+      #formular_beschrieb {
+        padding-left: 5vh;
+        padding-right: 5vh;
+      }
+    }
 
-.fruit {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 30px;
-    height: 30px;
-    background-color: red;
-    border-radius: 50%;
-    display: none;
-}
+    @media (max-width: 800px) {
+      .collect_points {
+        height: 110vh;
+      }
+    }
 
-#score {
-    font-size: 20px;
-    font-weight: bold;
-    color: #426728;
-    margin-top: 10px;
-}
+    @media (max-width: 600px) {
+      form {
+        margin-top: 52vh;
+      }
+    }
 
-#start_button {
-    padding: 10px 20px;
-    background-color: #426728;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 16px;
-}
+    /* Erfolg: Fade & Zentrierung */
+    #form_fields.fade-out {
+      opacity: 0;
+      transition: opacity 0.4s ease-out;
+    }
 
-#start_button:hover {
-    background-color: #426728;
-}
-
-
-/*CSS für das Form*//* Flexbox-Container für die gesamte Seite, um das Formular zu zentrieren */
-.formular_center {
-    display: flex;               /* Flexbox aktivieren */
-    justify-content: center;     /* Zentriert den Container horizontal */
-    align-items: center;         /* Zentriert den Container vertikal */
-    height: 100vh;               /* Setzt die Höhe des Containers auf die volle Bildschirmhöhe */
-}
-
-/* Container für das Formular */
-.login_container,
-.text-container {
-    margin: 12px 0px 12px 0px;
-    padding: 0px 12px 12px 12px;
-}
-
-/* Formular Container Styling */
-.login_container {
-    width: 500px;
-    border: 5px solid #5F7a3e;
-    border-radius: 12px;
-}
-
-/* Allgemeines Styling für die Felder */
-#first_name,
-#last_name, 
-#email,
-#adress,
-#housenmbr,
-#plz {
-    background-color: #f1f3e8;   /* Heller Hintergrund für alle Eingabefelder */
-    height: 32px;                  /* Setzt die Höhe der Eingabefelder */
-    margin-bottom: 12px;           /* Abstand zwischen den Feldern */
-}
-
-/* Container für Hausnummer und PLZ nebeneinander */
-.container-inline {
-    display: flex;                 /* Flexbox aktivieren */
-    gap: 12px;                     /* Abstand zwischen den Feldern */
-    margin-bottom: 12px;           /* Abstand unten */
-}
-
-/* Styling für Hausnummer und PLZ Felder */
-#housenmbr,
-#plz {
-    width: 80px;                   /* Breite der Felder auf 50px setzen */
-    margin-bottom: 0;              /* Kein zusätzlicher Abstand unten */
-}
-
-/* Styling für Labels */
-label {
-    display: block;               /* Stellt sicher, dass das Label in einer neuen Zeile erscheint */
-    margin-bottom: 5px;           /* Fügt etwas Abstand zwischen Label und Eingabefeld hinzu */
-    font-size: medium;
-    font-weight: 100;             /* Optional: Schriftgewicht für die Labels */
-}
-
-/* Styling für den Button */
-#submit_button {
-    display: block;
-    margin-top: 3%;
-    background-color: #333f23;    /* Button Hintergrundfarbe */
-    color: #e6e7e4;               /* Button Textfarbe */                 
-    padding: 10px;                /* Padding für den Button */
-    border: none;                 /* Entfernt den Standardrahmen */
-    border-radius: 4px;           /* Abgerundete Ecken für den Button */
-    cursor: pointer;             /* Zeigt einen Finger bei der Maus an, wenn man über den Button fährt */
-}
-
-#submit_button:hover {
-    background-color: #426728;    /* Button Hintergrundfarbe beim Hover */
-}
+    #submit_button.centered {
+      display: block;
+      margin: 40px auto 0 auto;
+      text-align: center;
+      width: fit-content;
+    }
