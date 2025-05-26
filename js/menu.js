@@ -1,7 +1,7 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const toggleBtn = document.querySelector(".menu-toggle");
+  const toggleBtn = document.querySelector(".menu_toggle");
   const navLinks = document.querySelector(".nav_link");
-  const closeBtn = document.querySelector(".menu-close");
+  const closeBtn = document.querySelector(".menu_close");
 
   toggleBtn.addEventListener("click", () => {
     navLinks.classList.toggle("open");
