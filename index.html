@@ -44,22 +44,35 @@
           <h1>BIOTIFUL</h1>
         </div>
       </header>
-      <!-- Buttons richtig formatieren -> Können ins common css kommen, da es für alle Seiten gilt-->
-      <a href="shop.html"
-        ><button class="button_light">Nachhaltig werden</button></a
-      >
+      <section class="start_erklärung">
+        <h4 class="titel">WAS MACHEN WIR?</h4>
+        <h3 class="untertitel">Unsere Vision für eine grünere Zukunft</h3>
+        <p>
+          Wir glauben an den Unterschied, den echte Bioqualität macht. Bei
+          BioTiful dreht sich alles um gesunde Ernährung, faire Landwirtschaft
+          und klima-frendliche Lieferwege. Unsere Produkte stammen aus
+          kontrolliertem Anbau - ohne Chemie, aber mit viel Liebe.
+        </p>
+        <a href="shop.html"
+          ><button class="button_light">Nachhaltig werden</button></a
+        >
+      </section>
       <section id="angebot">
         <h4 class="titel">UNSER ANGEBOT</h4>
         <div class="card_grid">
           <a href="shop.html#gemüse">
             <div class="angebot_card">
-              <img src="images/Icon_Aubergine.png" alt="Aubergine Icon" />
+              <img
+                src="images/Icon_Aubergine.png"
+                alt="Aubergine Icon"
+                class="produkt"
+              />
               <div class="card_content">
                 <div class="card_text">
                   <h5>Gemüse</h5>
                 </div>
                 <img
-                  src="images/Icon_Pfeil.png"
+                  src="images/Icon_Pfeil_rechts.png"
                   alt="Pfeil Icon"
                   class="arrow_icon"
                 />
@@ -68,13 +81,17 @@
           </a>
           <a href="shop.html#früchte">
             <div class="angebot_card">
-              <img src="images/Icon_Banane.png" alt="Banane Icon" />
+              <img
+                src="images/Icon_Banane.png"
+                alt="Banane Icon"
+                class="produkt"
+              />
               <div class="card_content">
                 <div class="card_text">
                   <h5>Früchte</h5>
                 </div>
                 <img
-                  src="images/Icon_Pfeil.png"
+                  src="images/Icon_Pfeil_rechts.png"
                   alt="Pfeil Icon"
                   class="arrow_icon"
                 />
@@ -83,13 +100,17 @@
           </a>
           <a href="shop.html#kräuter">
             <div class="angebot_card">
-              <img src="images/Icon_Kraut.png" alt="Kraut Icon" />
+              <img
+                src="images/Icon_Kraut.png"
+                alt="Kraut Icon"
+                class="produkt"
+              />
               <div class="card_content">
                 <div class="card_text">
                   <h5>Kräuter</h5>
                 </div>
                 <img
-                  src="images/Icon_Pfeil.png"
+                  src="images/Icon_Pfeil_rechts.png"
                   alt="Pfeil Icon"
                   class="arrow_icon"
                 />
@@ -98,13 +119,17 @@
           </a>
           <a href="shop.html#wurzelgemüse">
             <div class="angebot_card">
-              <img src="images/Icon_Karotte.png" alt="Karotte Icon" />
+              <img
+                src="images/Icon_Karotte.png"
+                alt="Karotte Icon"
+                class="produkt"
+              />
               <div class="card_content">
                 <div class="card_text">
                   <h5>Wurzelgemüse</h5>
                 </div>
                 <img
-                  src="images/Icon_Pfeil.png"
+                  src="images/Icon_Pfeil_rechts.png"
                   alt="Pfeil Icon"
                   class="arrow_icon"
                 />
@@ -146,7 +171,7 @@
           >
         </div>
       </section>
-      <section>
+      <section class="aktuelles">
         <h4 class="titel">AKTUELLES</h4>
         <h3 class="untertitel">Punkte sammeln und profitieren</h3>
         <div class="aktuelles_wrapper">
@@ -203,7 +228,6 @@
           </div>
         </div>
       </section>
-      <br />
       <section class="infos_section">
         <div class="infos_wrapper">
           <div class="info_box">
@@ -246,38 +270,66 @@
           </div>
         </div>
       </section>
-      <section>
+      <section class="kundenbewertung">
         <h4 class="titel">KUNDENBEWERTUNGEN</h4>
         <h3 class="untertitel">Das sind eure Meinungen</h3>
         <div class="feedback_carousel">
           <!-- Button links -->
-          <button></button>
-          <div class="card_index">
+          <button class="carousel_button left" aria-label="vorherige bewertung">
+            <img src="/images/Icon_Pfeil_links.png" alt="Pfeil nach links" />
+          </button>
+          <div class="carousel_index">
             <!-- Kundenbild -->
-            <img src="" alt="Kundenbild" />
-            <h5>Ich bin ein Fan!</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel
-              totam incidunt fuga.
-            </p>
-            <div class="stars"></div>
-            <!-- Könnte man mit Datenbank verbinden -->
-            <h6 class="name">Fanni, 25</h6>
+            <img src="/images/Kundenbild_1.jpg" alt="Kundenbild 1" />
+            <div class="textblock">
+              <h5>Ich bin begeistert!</h5>
+              <p>
+                BioTiful ist nicht nur nachhaltig, sondern auch super schnell.
+                Mein Einkauf fühlt sich richtig gut an!
+              </p>
+              <div class="rating-row">
+                <div class="stars">
+                  <img
+                    src="/images/Icon_Sterne_Bewertung.png"
+                    alt="5 Sterne Bewertung"
+                  />
+                </div>
+                <!-- Könnte man mit Datenbank verbinden -->
+                <h6 class="name">Fanni, 25</h6>
+              </div>
+            </div>
           </div>
-          <div class="card_index">
+          <div class="carousel_index">
             <!-- Kundenbild -->
-            <img src="" alt="Kundenbild" />
-            <h5>Ich bin ein Fan!</h5>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo vel
-              totam incidunt fuga.
-            </p>
-            <div class="stars"></div>
-            <!-- Könnte man mit Datenbank verbinden -->
-            <h6 class="name">Fanni, 25</h6>
+            <img src="/images/Kundenbild_2.jpg" alt="Kundenbild 2" />
+            <div class="textblock">
+              <h5>Top Qualität!</h5>
+              <p>
+                Ich liebe das Konzept! Endlich kann ich bewusster einkaufen und
+                werde dafür auch noch belohnt.
+              </p>
+              <div class="rating-row">
+                <div class="stars">
+                  <img
+                    src="/images/Icon_Sterne_Bewertung.png"
+                    alt="5 Sterne Bewertung"
+                  />
+                </div>
+                <!-- Könnte man mit Datenbank verbinden -->
+                <h6 class="name">Lukas, 32</h6>
+              </div>
+            </div>
           </div>
           <!-- Button rechts -->
-          <button></button>
+          <button class="carousel_button right" aria-label="nächste bewertung">
+            <img src="/images/Icon_Pfeil_rechts.png" alt="Pfeil nach rechts" />
+          </button>
+          <button
+            class="carousel_button down"
+            aria-label="nächste untere bewertung"
+          >
+            <img src="/images/Icon_Pfeil_unten.png" alt="Pfeil nach rechts" />
+          </button>
         </div>
       </section>
       <div class="linie"></div>
@@ -300,11 +352,11 @@
         <a href="https://www.instagram.com/"
           ><img src="images/Icon_Insta.png" alt="Icon Instagram"
         /></a>
-        <a href="#nav"><button class="scroll_top">↑</button></a>
+        <a href="#nav"><button class="scroll_top"></button></a>
       </div>
     </footer>
-
     <script src="js/menu.js"></script>
     <script src="js/slideshow.js"></script>
+    <script src="js/kundenbewertung_buttons.js"></script>
   </body>
 </html>
