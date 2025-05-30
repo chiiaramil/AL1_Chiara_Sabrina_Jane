@@ -101,8 +101,8 @@ function createFruit() {
     if (isGood) {
         // Zufällig zwischen Tomate und Lauch wählen
         fruit.style.backgroundImage = Math.random() < 0.5
-            ? "url('/images/Biosafari_Tomate.png')"
-            : "url('/images/Biosafari_Lauch.png')";
+            ? "url('images/Biosafari_Tomate.png')"
+            : "url('images/Biosafari_Lauch.png')";
     }
 
     // Zufällige Position am oberen Rand des Spielbereichs
