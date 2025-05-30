@@ -53,6 +53,38 @@ a {
   color: black;
 }
 
+.button_dark {
+  background-color: #303b1b;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  margin-top: 40px;
+  padding: 10px 20px;
+  display: block;
+  margin: 40px auto 0 auto;
+  font-size: clamp(11px, 3vw, 20px);
+  transition-duration: 0.4s;
+}
+
+.button_dark:hover {
+  background-color: #426728;
+}
+
+.button_light {
+  background-color: #d8e080;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  display: block;
+  margin: 40px auto 0 auto;
+  font-size: clamp(11px, 3vw, 20px);
+  transition-duration: 0.4s;
+}
+
+.button_light:hover {
+  background-color: #97b166;
+}
+
 nav,
 footer {
   height: 40px;
