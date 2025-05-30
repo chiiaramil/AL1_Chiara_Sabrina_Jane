@@ -29,7 +29,7 @@
 #basket {
   width: 100px;
   height: 60px;
-  background-image: url("/images/Biosafari_Korb.png");
+  background-image: url("images/Biosafari_Korb.png");
   background-size: contain;
   background-repeat: no-repeat;
   position: absolute;
@@ -50,11 +50,11 @@
 }
 
 .fruit.good {
-  background-image: url('/images/Biosafari_Tomate.png');
+  background-image: url('images/Biosafari_Tomate.png');
 }
 
 .fruit.bad {
-  background-image: url('/images/Biosafari_Bombe.png');
+  background-image: url('images/Biosafari_Bombe.png');
 }
 
 #start_game {
