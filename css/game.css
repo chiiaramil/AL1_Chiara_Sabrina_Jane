@@ -1,0 +1,300 @@
+/* Game Styles */
+.game_container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+.game_header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  font-size: 28px;
+  font-weight: bold;
+  color: #1c4316;
+}
+
+#game_area {
+  width: 100%;
+  height: 700px;
+  background-color: #f0f4ef;
+  position: relative;
+  overflow: hidden;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+
+#basket {
+  width: 100px;
+  height: 60px;
+  background-image: url("/images/Biosafari_Korb.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: left 0.1s ease-out;
+  cursor: pointer;
+}
+
+.fruit {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background-size: contain;
+  background-repeat: no-repeat;
+  cursor: pointer;
+}
+
+.fruit.good {
+  background-image: url('/images/Biosafari_Tomate.png');
+}
+
+.fruit.bad {
+  background-image: url('/images/Biosafari_Bombe.png');
+}
+
+#start_game {
+  width: 200px;
+  margin: 20px auto;
+  padding: 15px 30px;
+  font-size: 18px;
+}
+
+/* Form-Beschrieb-Zentrierung */
+#formular_beschrieb {
+  text-align: center;
+}
+
+.collect_points {
+  height: 110vh;
+}
+
+.short_fields {
+  display: flex;
+  gap: 3rem;
+  margin-bottom: 3%;
+}
+
+.short_fields .field {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  max-width: 40%;
+}
+
+.short_fields .field input {
+  padding: 10%;
+}
+
+
+.anmeldeformular {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh;
+}
+
+form {
+  background-color: #ffffff;
+  font-family: "articulat-cf", sans-serif;
+  padding: 6vh;
+  border-radius: 10px;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.08);
+  width: 100%;
+  max-width: 45vh;
+  margin-top: 35vh;
+}
+
+label {
+  color: #1c4316;
+  font-weight: 700;
+  font-size: 2vh;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 95%;
+  padding: 3%;
+  margin-bottom: 3%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #f0f4ef;
+}
+
+#gender {
+  display: block;
+  width: 30%;
+  padding: 3%;
+  margin-bottom: 3%;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 1rem;
+  background-color: #f0f4ef;
+}
+
+input::placeholder {
+  color: #7a7a7a;
+  font-style: italic;
+  font-size: 1.6vh;
+}
+
+input:focus {
+  border-color: #7bc96f;
+  outline: none;
+  box-shadow: 0 0 3px rgba(50, 82, 45, 0.7);
+}
+
+input:hover {
+  border-color: #7bc96f;
+  box-shadow: 0 0 3px rgba(50, 82, 45, 0.7);
+  cursor: auto;
+}
+
+.error_message {
+  color: red;
+  font-size: 1.4vh;
+  font-style: italic;
+}
+
+button {
+  width: 40%;
+  margin-top: 3%;
+  padding: 8px;
+  background-color: #1c4316;
+  border: none;
+  color: white;
+  font-size: 1rem;
+  border-radius: 40px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7bc96f;
+}
+
+.loader {
+  border: 4px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 4px solid #93bc89;
+  width: 20px;
+  height: 20px;
+  margin-left: 8px;
+  display: inline-block;
+  vertical-align: middle;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.success_message {
+  margin-top: 1rem;
+  font-size: 0.9rem;
+  font-style: italic;
+  color: #1c4316;
+  text-align: center;
+  max-width: 400px;
+}
+
+/* Responsiveness */
+@media (min-width: 800px) {
+  #formular_beschrieb {
+    margin-bottom: 6vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .short_fields {
+    flex-direction: column;
+    gap: 0%;
+  }
+
+  form {
+    margin-top: 52vh;
+  }
+
+  #formular_beschrieb {
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .collect_points {
+    height: 120vh;
+  }
+}
+
+@media (max-width: 600px) {
+  form {
+    margin-top: 52vh;
+  }
+}
+
+
+/* Erfolg: Fade & Zentrierung */
+#form_fields.fade_out {
+  opacity: 0;
+  transition: opacity 0.4s ease-out;
+}
+
+#submit_button.centered {
+  display: block;
+  margin: 40px auto 0 auto;
+  text-align: center;
+  width: fit-content;
+}
+
+/* Hide form initially */
+.hidden {
+  display: none;
+}
+
+/* Score warning effect */
+.score.warning {
+  color: #ff0000;
+  transition: color 0.2s ease;
+}
+
+/* Basket wiggle animation */
+@keyframes wiggle {
+  0% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  25% {
+    transform: translateX(-50%) rotate(-5deg);
+  }
+
+  50% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+
+  75% {
+    transform: translateX(-50%) rotate(5deg);
+  }
+
+  100% {
+    transform: translateX(-50%) rotate(0deg);
+  }
+}
+
+#basket.wiggle {
+  animation: wiggle 0.3s ease-in-out;
+}
