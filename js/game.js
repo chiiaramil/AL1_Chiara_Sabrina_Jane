@@ -1,6 +1,6 @@
 // Spielvariablen
 let score = 0;
-let timeLeft = 2;
+let timeLeft = 30;
 let gameInterval;
 let fruitInterval;
 let isGameRunning = false;
@@ -65,7 +65,7 @@ startButton.addEventListener('click', () => {
 
     // Spielstatus zurücksetzen
     score = 0;
-    timeLeft = 2;
+    timeLeft = 30;
     isGameRunning = true;
     basketPosition = 50; // Korposition zurücksetzen
     basket.style.left = '50%'; // Korposition visuell zurücksetzen
