@@ -1,6 +1,6 @@
 // Spielvariablen
 let score = 0;
-let timeLeft = 30;
+let timeLeft = 2;
 let gameInterval;
 let fruitInterval;
 let isGameRunning = false;
@@ -12,7 +12,7 @@ const gameArea = document.getElementById('game_area');
 const basket = document.getElementById('basket');
 const scoreDisplay = document.getElementById('score');
 const timerDisplay = document.getElementById('timer');
-const startButton = document.getElementById('start_game');
+const startButton = document.querySelector('.start_game');
 
 // Tastatursteuerung
 document.addEventListener('keydown', (e) => {
@@ -65,7 +65,7 @@ startButton.addEventListener('click', () => {
 
     // Spielstatus zurücksetzen
     score = 0;
-    timeLeft = 30;
+    timeLeft = 2;
     isGameRunning = true;
     basketPosition = 50; // Korposition zurücksetzen
     basket.style.left = '50%'; // Korposition visuell zurücksetzen
@@ -202,10 +202,10 @@ function endGame() {
   `;
 
     dialog.innerHTML = `
-    <h2>Spiel beendet!</h2>
-    <p>Deine Punkte: ${score}</p>
-    <p>Diese Punkte werden deinen Treuepunkten gutgeschrieben, wenn du dich bei BioTiful registrierst.</p>
-    <button onclick="this.parentElement.remove(); document.querySelector('.game_container').style.display = 'none'; document.querySelector('.collect_points').classList.remove('hidden');">Konto erstellen</button>
+    <h3 style="margin-bottom: 0;">Spiel beendet!</h3>
+    <p style="margin-bottom: 0; margin-top: 1vh;">Deine Punkte: ${score}</p>
+    <p style="font-style: italic; margin-top: 0.5vh; font-size: 2vh;">Diese Punkte werden deinen Treuepunkten gutgeschrieben, <br> wenn du dich bei BioTiful registrierst.</p>
+    <button class="start_game"; onclick="this.parentElement.remove(); document.querySelector('.game_container').style.display = 'none'; document.querySelector('.collect_points').classList.remove('hidden');">Konto erstellen</button>
   `;
 
 
