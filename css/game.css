@@ -1,4 +1,38 @@
+.grid_container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+  padding-right: 20vh;
+}
+
+.grid_item {
+  padding: 5vh;
+}
+
+.grid_item_img {
+  display: flex;
+  align-items: center;
+  /* vertikal zentrieren */
+  justify-content: flex-end;
+  /* horizontal rechtsbündig */
+}
+
+.grid_item img {
+  width: 70%;
+  display: block;
+  border-radius: 10px;
+  margin-left: auto;
+
+}
+
 /* Game Styles */
+.game_background {
+  background-color: #d0dc9c;
+  padding-bottom: 5vh;
+}
+
 .game_container {
   width: 80%;
   max-width: 1200px;
@@ -11,7 +45,7 @@
   display: flex;
   justify-content: space-between;
   margin-bottom: 20px;
-  font-size: 28px;
+  font-size: clamp(19px, 3vw, 30px);
   font-weight: bold;
   color: #1c4316;
 }
@@ -34,8 +68,8 @@
   background-repeat: no-repeat;
   position: absolute;
   bottom: 20px;
-  left: 51%;
-  transform: translateX(-50%);
+  left: 50%;
+  transform: translateX(-33%);
   transition: left 0.1s ease-out;
 }
 
@@ -70,6 +104,7 @@
 
 .collect_points {
   height: 110vh;
+  background-color: #d0dc9c;
 }
 
 .short_fields {
@@ -210,41 +245,6 @@ input:hover {
   max-width: 400px;
 }
 
-/* Responsiveness */
-@media (min-width: 800px) {
-  #formular_beschrieb {
-    margin-bottom: 6vh;
-  }
-}
-
-@media (max-width: 800px) {
-  .short_fields {
-    flex-direction: column;
-    gap: 0%;
-  }
-
-  form {
-    margin-top: 52vh;
-  }
-
-  #formular_beschrieb {
-    padding-left: 5vh;
-    padding-right: 5vh;
-  }
-}
-
-@media (max-width: 800px) {
-  .collect_points {
-    height: 120vh;
-  }
-}
-
-@media (max-width: 600px) {
-  form {
-    margin-top: 52vh;
-  }
-}
-
 
 /* Erfolg: Fade & Zentrierung */
 #form_fields.fade_out {
@@ -270,26 +270,80 @@ input:hover {
 /* Basket wiggle animation */
 @keyframes wiggle {
   0% {
-    transform: translateX(-50%) rotate(0deg);
+    transform: translateX(-33%) rotate(0deg);
   }
 
   25% {
-    transform: translateX(-50%) rotate(-5deg);
+    transform: translateX(-33%) rotate(-5deg);
   }
 
   50% {
-    transform: translateX(-50%) rotate(0deg);
+    transform: translateX(-33%) rotate(0deg);
   }
 
   75% {
-    transform: translateX(-50%) rotate(5deg);
+    transform: translateX(-33%) rotate(5deg);
   }
 
   100% {
-    transform: translateX(-50%) rotate(0deg);
+    transform: translateX(-33%) rotate(0deg);
   }
 }
 
 #basket.wiggle {
   animation: wiggle 0.3s ease-in-out;
+}
+
+
+/* Responsiveness */
+@media (min-width: 800px) {
+  #formular_beschrieb {
+    margin-bottom: 6vh;
+  }
+}
+
+@media screen and (max-width: 1300px) {
+  .grid_container {
+    grid-template-columns: 1fr;
+    padding-right: 0vh;
+    padding: 10vh;
+  }
+
+  .grid_item {
+    text-align: center;
+    padding: 0vh;
+  }
+
+  .grid_item img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (max-width: 800px) {
+  .short_fields {
+    flex-direction: column;
+    gap: 0%;
+  }
+
+  form {
+    margin-top: 52vh;
+  }
+
+  #formular_beschrieb {
+    padding-left: 5vh;
+    padding-right: 5vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .collect_points {
+    height: 105vh;
+  }
+}
+
+@media (max-width: 600px) {
+  form {
+    margin-top: 52vh;
+  }
 }
