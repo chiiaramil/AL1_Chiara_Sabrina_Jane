@@ -14,7 +14,7 @@
   <div class="page_wrapper">
     <!-- Navigation -->
     <nav id="nav">
-      <img class="logo" src="images/Logo_BioTiful.png" alt="Logo BioTiful" />
+      <a href="index.html"><img class="logo" src="images/Logo_BioTiful.png" alt="Logo BioTiful" /></a>
       <div class="nav_right">
         <div class="nav_link">
           <button class="menu_close" aria-label="Menü schliessen">
@@ -33,24 +33,46 @@
     <main>
       <header class="hero">
         <!-- Hero Bereich -->
-        <img src="images/HG_Bild_HERO-Bereich_Game.jpg" alt="Bild von Früchten und Gemüse in einem braunen Holzkorb"
+        <img src="images/Headerbild_Biosafari.jpg" alt="Bild von Früchten und Gemüse in einem braunen Holzkorb"
           class="hero_img" />
         <div class="hero_text">
           <h2>GEMÜSE-SPIEL</h2>
           <h1>BIOSAFARI</h1>
         </div>
       </header>
-      <!-- Game Container -->
-      <section class="game_container">
-        <div class="game_header">
-          <div class="score">Punkte: <span id="score">0</span></div>
-          <div class="timer">Zeit: <span id="timer">30</span>s</div>
+
+      <!-- Bild und Text-->
+      <section class="start_erklärung">
+        <div class=" grid_container">
+          <div class="grid_item grid_item_img"><img src="images/Biosafari_Bild.jpg" alt="Gemüsekorb" /></div>
+          <div class="grid_item">
+            <h4 class=" titel">SPIELEN UND PUNKTE SAMMELN</h4>
+            <h3 class="untertitel">Unser Biosafari-Spiel</h3>
+            <p style="text-align: center;">Fang so viele Biofrüchte und Biogemüse wie möglich und sammle Treuepunkte für
+              deinen nächsten Einkauf!
+              <br><br>
+              Mit 100 Treuenpunkten erhälst du 10% auf deinen nächsten
+              Einkauf. Also los, beginne zu sparen und starte jetzt mit dem Sammeln. Doch sei wachsam: Bomben kosten
+              dich drei Punkte!
+            </p>
+          </div>
         </div>
-        <div id="game_area">
-          <div id="basket"></div>
-        </div>
-        <button class="start_game">Spiel starten</button>
       </section>
+      <!-- Game Container -->
+      <div class="game_background">
+        <section class="game_container">
+          <h4 class="titel">Biosafari</h4>
+          <h3 class="untertitel">Versuche dein Glück!</h3>
+          <div class="game_header">
+            <div class="score">Punkte: <span id="score">0</span></div>
+            <div class="timer">Zeit: <span id="timer">30</span>s</div>
+          </div>
+          <div id="game_area">
+            <div id="basket"></div>
+          </div>
+          <button class="start_game">Spiel starten</button>
+        </section>
+      </div>
       <!-- Formular -->
       <section class="collect_points hidden">
         <h4 class="titel" style="margin-top: 0%; padding-top: 5%;">Anmeldeformular</h4>
@@ -115,6 +137,7 @@
         <a href="#nav"><button class="scroll_top"></button></a>
       </div>
     </footer>
+    <script src="js/menu.js"></script>
     <script src="js/databaseClient.js"></script>
     <script src="js/form.js"></script>
     <script src="js/game.js"></script>
