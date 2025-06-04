@@ -1,5 +1,69 @@
+/* Standardmäßig ausblenden */
+.top_nav_mobile {
+  display: none;
+}
+
+/* Navigation */
+.content_layout {
+  display: flex;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+/* Navigation links */
+.side_nav {
+  width: 20%;
+  max-width: 200px;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.1);
+  height: fit-content;
+  position: sticky;
+  top: 100px;
+  z-index: 10;
+}
+
+.side_nav h3 {
+  margin-top: 0;
+  font-size: 1.1em;
+}
+
+.side_nav ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.side_nav li {
+  margin-bottom: 10px;
+}
+
+.side_nav a {
+  text-decoration: none;
+  color: #2a7b2f;
+  font-weight: bold;
+  transition: color 0.2s;
+}
+
+.side_nav a:hover {
+  color: #1e5522;
+}
+
+
+/* Produktinhalt */
+.produkte_content {
+  width: 80%;
+  overflow-x: hidden;
+}
+
+/* Seite vor horizontalem Scroll schützen */
+body {
+  overflow-x: hidden;
+}
+
 .produkte_section {
   padding: 2rem 0;
+  padding-top: 0vh;
   text-align: center;
 }
 
@@ -10,31 +74,19 @@
 }
 
 .produkte_grid {
+  /*
   display: grid;
-  grid-template-columns: repeat(5, 1fr);
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 20px;
+  box-sizing: border-box;
+  width: 100%;*/
+
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
   gap: 1.5rem;
   width: 95vw;
   margin: 0 auto;
   box-sizing: border-box;
-}
-
-/* Responsive Layouts */
-@media (max-width: 1400px) {
-  .produkte_grid {
-    grid-template-columns: repeat(3, 1fr);
-  }
-}
-
-@media (max-width: 1000px) {
-  .produkte_grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (max-width: 600px) {
-  .produkte_grid {
-    grid-template-columns: 1fr;
-  }
 }
 
 .produkt {
@@ -131,4 +183,39 @@
   max-width: 800px;
   margin: 0 auto;
   text-align: center;
+}
+
+/* Responsive Layouts */
+@media (max-width: 1400px) {
+  .produkte_grid {
+    grid-template-columns: repeat(6, 1fr);
+  }
+}
+
+@media (max-width: 1300px) {
+  .produkte_grid {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 1100px) {
+  .produkte_grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .side_nav {
+    display: none;
+  }
+
+  .produkte_content {
+    width: 100%;
+  }
+
+  .produkte_grid {
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0 10px;
+    box-sizing: border-box;
+  }
 }
