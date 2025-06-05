@@ -2,8 +2,8 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 20px;
-  padding-top: 10vh;
-  padding-bottom: 10vh;
+  padding-top: 4.5vh;
+  padding-bottom: 4.5vh;
   padding-right: 20vh;
 }
 
@@ -24,7 +24,6 @@
   display: block;
   border-radius: 10px;
   margin-left: auto;
-
 }
 
 /* Game Styles */
@@ -83,13 +82,12 @@
 }
 
 .fruit.good {
-  background-image: url('../images/Biosafari_Tomate.png');
+  background-image: url("../images/Biosafari_Tomate.png");
 }
 
 .fruit.bad {
-  background-image: url('../images/Biosafari_Bombe.png');
+  background-image: url("../images/Biosafari_Bombe.png");
 }
-
 
 #start_game {
   width: 200px;
@@ -123,7 +121,6 @@
 .short_fields .field input {
   padding: 10%;
 }
-
 
 .anmeldeformular {
   margin: 0;
@@ -245,7 +242,6 @@ input:hover {
   max-width: 400px;
 }
 
-
 /* Erfolg: Fade & Zentrierung */
 #form_fields.fade_out {
   opacity: 0;
@@ -293,7 +289,6 @@ input:hover {
 #basket.wiggle {
   animation: wiggle 0.3s ease-in-out;
 }
-
 
 /* Responsiveness */
 @media (min-width: 800px) {
