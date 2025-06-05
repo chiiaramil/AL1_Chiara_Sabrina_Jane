@@ -51,19 +51,26 @@
         </p>
       </section>
       <div class="content_layout">
+        <button class="kategorien_toggle" aria-label="Kategorien öffnen">
+          <img src="images/Icon_Pfeil_rechts.png" alt="Kategorien anzeigen" />
+        </button>
         <aside class="side_nav">
-          <h3><a href="shop.html" style="color: black;">Kategorien</a></h3>
-          <div class="linie" style="margin: 0vh;"></div>
+          <button class="shop kategorien_close" aria-label="Kategorien schliessen">
+            <img src="images/Icon_Menü_schliessen.png" alt="X" />
+          </button>
+
+          <h3><a href="shop.html">Kategorien</a></h3>
+          <div class="linie"></div>
           <ul>
-            <li><a href="#gemüse">Gemüse</a></li>
-            <li><a href="#früchte">Früchte</a></li>
-            <li><a href="#kräuter">Kräuter</a></li>
-            <li><a href="#wurzelgemüse">Wurzelgemüse</a></li>
+            <li><a href="#gemuese">Gemüse</a></li>
+            <li><a href="#fruechte">Früchte</a></li>
+            <li><a href="#kraeuter">Kräuter</a></li>
+            <li><a href="#wurzelgemuese">Wurzelgemüse</a></li>
           </ul>
         </aside>
         <div class="produkte_content">
           <section class="produkte_section">
-            <h2 class="produkte_section_h2" id="gemüse">Gemüse</h2>
+            <h2 class="produkte_section_h2" id="gemuese">Gemüse</h2>
             <div class="linie"></div>
             <div class="produkte_grid">
               <div class="produkt">
@@ -179,7 +186,7 @@
             </div>
           </section>
           <section class="produkte_section">
-            <h2 class="produkte_section_h2" id="früchte">Früchte</h2>
+            <h2 class="produkte_section_h2" id="fruechte">Früchte</h2>
             <div class="linie"></div>
             <div class="produkte_grid">
               <div class="produkt">
@@ -295,7 +302,7 @@
             </div>
           </section>
           <section class="produkte_section">
-            <h2 class="produkte_section_h2" id="kräuter">Kräuter</h2>
+            <h2 class="produkte_section_h2" id="kraeuter">Kräuter</h2>
             <div class="linie"></div>
             <div class="produkte_grid">
               <div class="produkt">
@@ -411,7 +418,7 @@
             </div>
           </section>
           <section class="produkte_section">
-            <h2 class="produkte_section_h2" id="wurzelgemüse">Wurzelgemüse</h2>
+            <h2 class="produkte_section_h2" id="wurzelgemuese">Wurzelgemüse</h2>
             <div class="linie"></div>
             <div class="produkte_grid">
               <div class="produkt">
@@ -548,6 +555,7 @@
       </footer>
   </div>
   <script src="js/menu.js"></script>
+  <script src="js/shop_kategorien.js"></script>
 </body>
 
 </html>
