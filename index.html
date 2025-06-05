@@ -1,299 +1,362 @@
 <!DOCTYPE html>
 <html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="icon" href="images/Favicon.png" type="image/png" />
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/index.css" />
+    <link rel="stylesheet" href="https://use.typekit.net/vhs3smb.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home</title>
-  <link rel="icon" href="images/Favicon.png" type="image/png">
-  <link rel="stylesheet" href="css/common.css" />
-  <link rel="stylesheet" href="css/index.css" />
-  <link rel="stylesheet" href="https://use.typekit.net/vhs3smb.css" />
-</head>
-
-<body>
-  <!-- Navigation hier einfügen -->
-  <nav id="nav">
-    <a href="index.html"><img class="logo" src="images/Logo_BioTiful.png" alt="Logo BioTiful" /></a>
-    <div class="nav_right">
-      <div class="nav_link">
-        <button class="menu_close" aria-label="Menü schliessen">
-          <img src="images/Icon_Menü_schliessen.png" alt="Schliessen Button" />
+  <body>
+    <!-- Navigation hier einfügen -->
+    <nav id="nav">
+      <a href="index.html"
+        ><img class="logo" src="images/Logo_BioTiful.png" alt="Logo BioTiful"
+      /></a>
+      <div class="nav_right">
+        <div class="nav_link">
+          <button class="menu_close" aria-label="Menü schliessen">
+            <img
+              src="images/Icon_Menü_schliessen.png"
+              alt="Schliessen Button"
+            />
+          </button>
+          <a href="index.html" class="active">HOME</a>
+          <a href="shop.html">SHOP</a>
+          <a href="game.html">BIOSAFARI</a>
+          <!-- <a href="about.html">ÜBER UNS</a>-->
+        </div>
+        <button class="menu_toggle" aria-label="Menü öffnen">
+          <img src="images/Icon_Menu.png" alt="Icon Menü" />
         </button>
-        <a href="index.html" class="active">HOME</a>
-        <a href="shop.html">SHOP</a>
-        <a href="game.html">BIOSAFARI</a>
-        <!-- <a href="about.html">ÜBER UNS</a>-->
       </div>
-      <button class="menu_toggle" aria-label="Menü öffnen">
-        <img src="images/Icon_Menu.png" alt="Icon Menü" />
-      </button>
-    </div>
-  </nav>
-  <main>
-    <header class="hero">
-      <!-- Hero Bereich -->
-      <img src="images/Headerbild_Start.jpg" alt="Bild von Früchten und Gemüse in einem braunen Holzkorb"
-        class="hero_img" />
-      <div class="hero_text">
-        <h2>NATÜRLICH SCHÖN</h2>
-        <h1>BIOTIFUL</h1>
-      </div>
-    </header>
-    <section class="start_erklärung">
-      <h4 class="titel">WAS MACHEN WIR?</h4>
-      <h3 class="untertitel">Unsere Vision für eine grünere Zukunft</h3>
-      <p>
-        Wir glauben an den Unterschied, den echte Bioqualität macht. Bei
-        BioTiful dreht sich alles um gesunde Ernährung, faire Landwirtschaft
-        und klima-frendliche Lieferwege. Unsere Produkte stammen aus
-        kontrolliertem Anbau - ohne Chemie, aber mit viel Liebe.
-      </p>
-      <a href="shop.html"><button class="button_dark">Nachhaltig werden</button></a>
-    </section>
-    <section id="angebot">
-      <h4 class="titel">UNSER ANGEBOT</h4>
-      <div class="card_grid">
-        <a href="shop.html#gemüse">
-          <div class="angebot_card">
-            <img src="images/Icon_Aubergine.png" alt="Aubergine Icon" class="produkt" />
-            <div class="card_content">
-              <div class="card_text">
-                <h5>Gemüse</h5>
+    </nav>
+    <main>
+      <header class="hero">
+        <!-- Hero Bereich -->
+        <img
+          src="images/Headerbild_Start.jpg"
+          alt="Bild von Früchten und Gemüse in einem braunen Holzkorb"
+          class="hero_img"
+        />
+        <div class="hero_text">
+          <h2>NATÜRLICH SCHÖN</h2>
+          <h1>BIOTIFUL</h1>
+        </div>
+      </header>
+      <section class="start_erklärung">
+        <h4 class="titel">WAS MACHEN WIR?</h4>
+        <h3 class="untertitel">Unsere Vision für eine grünere Zukunft</h3>
+        <p>
+          Wir glauben an den Unterschied, den echte Bioqualität macht. Bei
+          BioTiful dreht sich alles um gesunde Ernährung, faire Landwirtschaft
+          und klima-frendliche Lieferwege. Unsere Produkte stammen aus
+          kontrolliertem Anbau - ohne Chemie, aber mit viel Liebe.
+        </p>
+        <a href="shop.html"
+          ><button class="button_dark">Nachhaltig werden</button></a
+        >
+      </section>
+      <section id="angebot">
+        <h4 class="titel">UNSER ANGEBOT</h4>
+        <div class="card_grid">
+          <a href="shop.html#gemüse">
+            <div class="angebot_card">
+              <img
+                src="images/Icon_Aubergine.png"
+                alt="Aubergine Icon"
+                class="produkt"
+              />
+              <div class="card_content">
+                <div class="card_text">
+                  <h5>Gemüse</h5>
+                </div>
+                <img
+                  src="images/Icon_Pfeil_rechts.png"
+                  alt="Pfeil Icon"
+                  class="arrow_icon"
+                />
               </div>
-              <img src="images/Icon_Pfeil_rechts.png" alt="Pfeil Icon" class="arrow_icon" />
             </div>
-          </div>
-        </a>
-        <a href="shop.html#früchte">
-          <div class="angebot_card">
-            <img src="images/Icon_Banane.png" alt="Banane Icon" class="produkt" />
-            <div class="card_content">
-              <div class="card_text">
-                <h5>Früchte</h5>
+          </a>
+          <a href="shop.html#früchte">
+            <div class="angebot_card">
+              <img
+                src="images/Icon_Banane.png"
+                alt="Banane Icon"
+                class="produkt"
+              />
+              <div class="card_content">
+                <div class="card_text">
+                  <h5>Früchte</h5>
+                </div>
+                <img
+                  src="images/Icon_Pfeil_rechts.png"
+                  alt="Pfeil Icon"
+                  class="arrow_icon"
+                />
               </div>
-              <img src="images/Icon_Pfeil_rechts.png" alt="Pfeil Icon" class="arrow_icon" />
             </div>
-          </div>
-        </a>
-        <a href="shop.html#kräuter">
-          <div class="angebot_card">
-            <img src="images/Icon_Kraut.png" alt="Kraut Icon" class="produkt" />
-            <div class="card_content">
-              <div class="card_text">
-                <h5>Kräuter</h5>
+          </a>
+          <a href="shop.html#kräuter">
+            <div class="angebot_card">
+              <img
+                src="images/Icon_Kraut.png"
+                alt="Kraut Icon"
+                class="produkt"
+              />
+              <div class="card_content">
+                <div class="card_text">
+                  <h5>Kräuter</h5>
+                </div>
+                <img
+                  src="images/Icon_Pfeil_rechts.png"
+                  alt="Pfeil Icon"
+                  class="arrow_icon"
+                />
               </div>
-              <img src="images/Icon_Pfeil_rechts.png" alt="Pfeil Icon" class="arrow_icon" />
             </div>
-          </div>
-        </a>
-        <a href="shop.html#wurzelgemüse">
-          <div class="angebot_card">
-            <img src="images/Icon_Karotte.png" alt="Karotte Icon" class="produkt" />
-            <div class="card_content">
-              <div class="card_text">
-                <h5>Wurzelgemüse</h5>
+          </a>
+          <a href="shop.html#wurzelgemüse">
+            <div class="angebot_card">
+              <img
+                src="images/Icon_Karotte.png"
+                alt="Karotte Icon"
+                class="produkt"
+              />
+              <div class="card_content">
+                <div class="card_text">
+                  <h5>Wurzelgemüse</h5>
+                </div>
+                <img
+                  src="images/Icon_Pfeil_rechts.png"
+                  alt="Pfeil Icon"
+                  class="arrow_icon"
+                />
               </div>
-              <img src="images/Icon_Pfeil_rechts.png" alt="Pfeil Icon" class="arrow_icon" />
+            </div>
+          </a>
+        </div>
+      </section>
+      <section class="vorteile">
+        <h4 class="titel">WARUM BIOTIFUL</h4>
+        <h3 class="untertitel">Mehr als nur ein Trend</h3>
+        <div class="vorteile_grid">
+          <div class="vorteil_box">
+            <div class="zahlen">80%</div>
+            <div class="textgruppe">
+              <h3>weniger Pestizide</h3>
+              <p>im Vergleich zu konventionellem Gemüse.</p>
             </div>
           </div>
-        </a>
-      </div>
-    </section>
-    <section class="vorteile">
-      <h4 class="titel">WARUM BIOTIFUL</h4>
-      <h3 class="untertitel">Mehr als nur ein Trend</h3>
-      <div class="vorteile_grid">
-        <div class="vorteil_box">
-          <div class="zahlen">80%</div>
-          <div class="textgruppe">
-            <h3>weniger Pestizide</h3>
-            <p>im Vergleich zu konventionellem Gemüse.</p>
-          </div>
-        </div>
-        <div class="vorteil_box">
-          <div class="zahlen">50%</div>
-          <div class="textgruppe">
-            <h3>weniger Energieverbrauch</h3>
-            <p>und 30% weniger CO₂-Emissionen im biologischen Anbau.</p>
-          </div>
-        </div>
-        <div class="vorteil_box">
-          <div class="zahlen">30%</div>
-          <div class="textgruppe">
-            <h3>mehr Antioxidantien</h3>
-            <p>und Vitamin C.</p>
-          </div>
-        </div>
-      </div>
-      <!-- Button führt wohin?-->
-      <div class="vorteile_button">
-        <a href="shop.html"><button class="button_dark">Jetzt einkaufen</button></a>
-      </div>
-    </section>
-    <section class="aktuelles">
-      <h4 class="titel">AKTUELLES</h4>
-      <h3 class="untertitel">Punkte sammeln und profitieren</h3>
-      <div class="aktuelles_wrapper">
-        <!-- Bilder Karousel -->
-        <div class="slideshow_container">
-          <div class="slides fade">
-            <div class="slide_wrapper">
-              <img src="images/Gemüsekorb_Aktuelles_1.jpg" alt="Gemüsekorb" />
-              <a class="vorher" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="nachher" onclick="plusSlides(1)">&#10095;</a>
+          <div class="vorteil_box">
+            <div class="zahlen">50%</div>
+            <div class="textgruppe">
+              <h3>weniger Energieverbrauch</h3>
+              <p>und 30% weniger CO₂-Emissionen im biologischen Anbau.</p>
             </div>
           </div>
-          <div class="slides fade">
-            <div class="slide_wrapper">
-              <img src="images/Gemüsekorb_Aktuelles_2.jpg" alt="Mann nimmt eine Tomate aus dem Gemüsekorb" />
-              <a class="vorher" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="nachher" onclick="plusSlides(1)">&#10095;</a>
+          <div class="vorteil_box">
+            <div class="zahlen">30%</div>
+            <div class="textgruppe">
+              <h3>mehr Antioxidantien</h3>
+              <p>und Vitamin C.</p>
             </div>
           </div>
-          <div class="slides fade">
-            <div class="slide_wrapper">
-              <img src="images/Gemüsekorb_Aktuelles_3.jpg" alt="Gemüsekörbe nebeneinander aufgestellt" />
-              <a class="vorher" onclick="plusSlides(-1)">&#10094;</a>
-              <a class="nachher" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <!-- Button führt wohin?-->
+        <div class="vorteile_button">
+          <a href="shop.html"
+            ><button class="button_dark">Jetzt einkaufen</button></a
+          >
+        </div>
+      </section>
+      <section class="aktuelles">
+        <h4 class="titel">AKTUELLES</h4>
+        <h3 class="untertitel">Punkte sammeln und profitieren</h3>
+        <div class="aktuelles_wrapper">
+          <!-- Bilder Karousel -->
+          <div class="slideshow_container">
+            <div class="slides fade">
+              <div class="slide_wrapper">
+                <img src="images/Gemüsekorb_Aktuelles_1.jpg" alt="Gemüsekorb" />
+                <a class="vorher" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nachher" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+            </div>
+            <div class="slides fade">
+              <div class="slide_wrapper">
+                <img
+                  src="images/Gemüsekorb_Aktuelles_2.jpg"
+                  alt="Mann nimmt eine Tomate aus dem Gemüsekorb"
+                />
+                <a class="vorher" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nachher" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+            </div>
+            <div class="slides fade">
+              <div class="slide_wrapper">
+                <img
+                  src="images/Gemüsekorb_Aktuelles_3.jpg"
+                  alt="Gemüsekörbe nebeneinander aufgestellt"
+                />
+                <a class="vorher" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="nachher" onclick="plusSlides(1)">&#10095;</a>
+              </div>
+            </div>
+            <!-- Punkte unter dem Karousel -->
+            <div class="dots_container">
+              <span class="dot" onclick="currentSlide(1)"></span>
+              <span class="dot" onclick="currentSlide(2)"></span>
+              <span class="dot" onclick="currentSlide(3)"></span>
             </div>
           </div>
-          <!-- Punkte unter dem Karousel -->
-          <div class="dots_container">
-            <span class="dot" onclick="currentSlide(1)"></span>
-            <span class="dot" onclick="currentSlide(2)"></span>
-            <span class="dot" onclick="currentSlide(3)"></span>
-          </div>
-        </div>
-        <div class="aktuelles_text">
-          <h5>Wir belohnen dich beim Einkauf von Bioprodukten</h5>
-          <p>
-            Bei uns lohnt sich nicht nur der Einkauf, sondern auch das
-            Spielen: In unserem exklusiven Online-Spiel kannst du Punkte
-            sammeln, die du direkt gegen attraktive Rabatte auf deine nächsten
-            Einkäufe einlösen kannst.
-          </p>
-          <a href="game.html"><button class="button_dark">Spielen und punkten</button></a>
-        </div>
-      </div>
-    </section>
-    <section class="infos_section">
-      <div class="infos_wrapper">
-        <div class="info_box">
-          <h3>1000+</h3>
-          <p>Bio-Produkte im Sortiment</p>
-        </div>
-        <div class="info_box">
-          <h3>96%</h3>
-          <p>Regional bezogen</p>
-        </div>
-        <div class="info_box">
-          <h3>3 Tage</h3>
-          <p>durchschnittliche Lieferzeit</p>
-        </div>
-        <div class="info_box">
-          <h3>100%</h3>
-          <p>plastikfreie Verpackung</p>
-        </div>
-      </div>
-    </section>
-    <section class="alleinstellungsmerkmal">
-      <h4 class="titel">ALLEINSTELLUNGSMERKMAL</h4>
-      <h3 class="untertitel">Das macht uns besonders</h3>
-      <div class="highlight_grid">
-        <div class="highlight_box">
-          <img src="images/Icon_Nachhaltig.png" alt="Icon Nachhaltigkeit" />
-          <p>Nachhaltiger Anbau ohne Pestizide und ohne Kompromisse</p>
-        </div>
-        <div class="highlight_box">
-          <img src="images/Icon_Auto.png" alt="Icon Auto" />
-          <p>Umweltfreundlicher Versand, klimaneutral und schnell</p>
-        </div>
-        <div class="highlight_box">
-          <img src="images/Icon_Partner.png" alt="Icon Partner" />
-          <p>Regionale Partner mit Vertrauen durch Transparenz</p>
-        </div>
-        <div class="highlight_box">
-          <img src="images/Icon_Recycelbar.png" alt="Icon Recycling" />
-          <p>Verpackungen mit Zukunft, wiederverwendbar oder recycelbar</p>
-        </div>
-      </div>
-    </section>
-    <section class="kundenbewertung">
-      <h4 class="titel">KUNDENBEWERTUNGEN</h4>
-      <h3 class="untertitel">Das sind eure Meinungen</h3>
-      <div class="feedback_carousel">
-        <!-- Button links -->
-        <button class="carousel_button left" aria-label="vorherige bewertung">
-          <img src="images/Icon_Pfeil_links.png" alt="Pfeil nach links" />
-        </button>
-        <div class="carousel_index">
-          <!-- Kundenbild -->
-          <img src="images/Kundenbild_1.jpg" alt="Kundenbild 1" />
-          <div class="textblock">
-            <h5>Ich bin begeistert!</h5>
+          <div class="aktuelles_text">
+            <h5>Wir belohnen dich beim Einkauf von Bioprodukten</h5>
             <p>
-              BioTiful ist nicht nur nachhaltig, sondern auch super schnell.
-              Mein Einkauf fühlt sich richtig gut an!
+              Bei uns lohnt sich nicht nur der Einkauf, sondern auch das
+              Spielen: In unserem exklusiven Online-Spiel kannst du Punkte
+              sammeln, die du direkt gegen attraktive Rabatte auf deine nächsten
+              Einkäufe einlösen kannst.
             </p>
-            <div class="rating-row">
-              <div class="stars">
-                <img src="images/Icon_Sterne_Bewertung.png" alt="5 Sterne Bewertung" />
-              </div>
-              <!-- Könnte man mit Datenbank verbinden -->
-              <h6 class="name">Fanni, 25</h6>
-            </div>
+            <a href="game.html"
+              ><button class="button_dark">Spielen und punkten</button></a
+            >
           </div>
         </div>
-        <div class="carousel_index">
-          <!-- Kundenbild -->
-          <img src="images/Kundenbild_2.jpg" alt="Kundenbild 2" />
-          <div class="textblock">
-            <h5>Top Qualität!</h5>
-            <p>
-              Ich liebe das Konzept! Endlich kann ich bewusster einkaufen und
-              werde dafür auch noch belohnt.
-            </p>
-            <div class="rating-row">
-              <div class="stars">
-                <img src="images/Icon_Sterne_Bewertung.png" alt="5 Sterne Bewertung" />
-              </div>
-              <!-- Könnte man mit Datenbank verbinden -->
-              <h6 class="name">Lukas, 32</h6>
-            </div>
+      </section>
+      <section class="infos_section">
+        <div class="infos_wrapper">
+          <div class="info_box">
+            <h3>1000+</h3>
+            <p>Bio-Produkte im Sortiment</p>
+          </div>
+          <div class="info_box">
+            <h3>96%</h3>
+            <p>Regional bezogen</p>
+          </div>
+          <div class="info_box">
+            <h3>3 Tage</h3>
+            <p>durchschnittliche Lieferzeit</p>
+          </div>
+          <div class="info_box">
+            <h3>100%</h3>
+            <p>plastikfreie Verpackung</p>
           </div>
         </div>
-        <!-- Button rechts -->
-        <button class="carousel_button right" aria-label="nächste bewertung">
-          <img src="images/Icon_Pfeil_rechts.png" alt="Pfeil nach rechts" />
-        </button>
-        <button class="carousel_button down" aria-label="nächste untere bewertung">
-          <img src="images/Icon_Pfeil_unten.png" alt="Pfeil nach rechts" />
-        </button>
+      </section>
+      <section class="alleinstellungsmerkmal">
+        <h4 class="titel">ALLEINSTELLUNGSMERKMAL</h4>
+        <h3 class="untertitel">Das macht uns besonders</h3>
+        <div class="highlight_grid">
+          <div class="highlight_box">
+            <img src="images/Icon_Nachhaltig.png" alt="Icon Nachhaltigkeit" />
+            <p>Nachhaltiger Anbau ohne Pestizide und ohne Kompromisse</p>
+          </div>
+          <div class="highlight_box">
+            <img src="images/Icon_Auto.png" alt="Icon Auto" />
+            <p>Umweltfreundlicher Versand, klimaneutral und schnell</p>
+          </div>
+          <div class="highlight_box">
+            <img src="images/Icon_Partner.png" alt="Icon Partner" />
+            <p>Regionale Partner mit Vertrauen durch Transparenz</p>
+          </div>
+          <div class="highlight_box">
+            <img src="images/Icon_Recycelbar.png" alt="Icon Recycling" />
+            <p>Verpackungen mit Zukunft, wiederverwendbar oder recycelbar</p>
+          </div>
+        </div>
+      </section>
+      <section class="kundenbewertung">
+        <h4 class="titel">KUNDENBEWERTUNGEN</h4>
+        <h3 class="untertitel">Das sind eure Meinungen</h3>
+        <div class="feedback_carousel">
+          <!-- Button links -->
+          <button class="carousel_button left" aria-label="vorherige bewertung">
+            <img src="images/Icon_Pfeil_links.png" alt="Pfeil nach links" />
+          </button>
+          <div class="carousel_index">
+            <!-- Kundenbild -->
+            <img src="images/Kundenbild_1.jpg" alt="Kundenbild 1" />
+            <div class="textblock">
+              <h5>Ich bin begeistert!</h5>
+              <p>
+                BioTiful ist nicht nur nachhaltig, sondern auch super schnell.
+                Mein Einkauf fühlt sich richtig gut an!
+              </p>
+              <div class="rating-row">
+                <div class="stars">
+                  <img
+                    src="images/Icon_Sterne_Bewertung.png"
+                    alt="5 Sterne Bewertung"
+                  />
+                </div>
+                <!-- Könnte man mit Datenbank verbinden -->
+                <h6 class="name">Fanni, 25</h6>
+              </div>
+            </div>
+          </div>
+          <div class="carousel_index">
+            <!-- Kundenbild -->
+            <img src="images/Kundenbild_2.jpg" alt="Kundenbild 2" />
+            <div class="textblock">
+              <h5>Top Qualität!</h5>
+              <p>
+                Ich liebe das Konzept! Endlich kann ich bewusster einkaufen und
+                werde dafür auch noch belohnt.
+              </p>
+              <div class="rating-row">
+                <div class="stars">
+                  <img
+                    src="images/Icon_Sterne_Bewertung.png"
+                    alt="5 Sterne Bewertung"
+                  />
+                </div>
+                <!-- Könnte man mit Datenbank verbinden -->
+                <h6 class="name">Lukas, 32</h6>
+              </div>
+            </div>
+          </div>
+          <!-- Button rechts -->
+          <button class="carousel_button right" aria-label="nächste bewertung">
+            <img src="images/Icon_Pfeil_rechts.png" alt="Pfeil nach rechts" />
+          </button>
+          <button
+            class="carousel_button down"
+            aria-label="nächste untere bewertung"
+          >
+            <img src="images/Icon_Pfeil_unten.png" alt="Pfeil nach rechts" />
+          </button>
+        </div>
+      </section>
+      <div class="linie"></div>
+    </main>
+    <!-- Footer hier einfügen -->
+    <footer>
+      <div class="erklärung">
+        Das ist ein Schulprojekt und keine reale Website
       </div>
-    </section>
-    <div class="linie"></div>
-  </main>
-  <!-- Footer hier einfügen -->
-  <footer>
-    <div class="erklärung">
-      Das ist ein Schulprojekt und keine reale Website
-    </div>
-    <div class="linie_vertikal"></div>
-    <div class="gruppenmitglieder">
-      <span>Chiara</span>
-      <span>Sabrina</span>
-      <span>Jane</span>
-    </div>
-    <div class="icons">
-      <a href="https://www.facebook.com/"><img src="images/Icon_Facebook.png" alt="Icon Facebook" /></a>
-      <a href="https://www.instagram.com/"><img src="images/Icon_Insta.png" alt="Icon Instagram" /></a>
-      <a href="#nav"><button class="scroll_top"></button></a>
-    </div>
-  </footer>
-  <script src="js/menu.js"></script>
-  <script src="js/slideshow.js"></script>
-  <script src="js/kundenbewertung_buttons.js"></script>
-</body>
-
+      <div class="linie_vertikal"></div>
+      <div class="gruppenmitglieder">
+        <span>Chiara</span>
+        <span>Sabrina</span>
+        <span>Jane</span>
+      </div>
+      <div class="icons">
+        <a href="https://www.facebook.com/"
+          ><img src="images/Icon_Facebook.png" alt="Icon Facebook"
+        /></a>
+        <a href="https://www.instagram.com/"
+          ><img src="images/Icon_Insta.png" alt="Icon Instagram"
+        /></a>
+        <a href="#nav"><button class="scroll_top"></button></a>
+      </div>
+    </footer>
+    <script src="js/menu.js"></script>
+    <script src="js/slideshow.js"></script>
+    <script src="js/kundenbewertung_buttons.js"></script>
+  </body>
 </html>
