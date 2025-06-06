@@ -24,7 +24,6 @@
           <a href="index.html">HOME</a>
           <a href="shop.html">SHOP</a>
           <a href="game.html" class="active">BIOSAFARI</a>
-          <!-- <a href="about.html">ÜBER UNS</a>-->
         </div>
         <button class="menu_toggle" aria-label="Menü öffnen">
           <img src="images/Icon_Menu.png" alt="Icon Menü" />
@@ -43,13 +42,13 @@
       </header>
 
       <!-- Bild und Text-->
-      <section class="start_erklärung">
+      <section>
         <div class=" grid_container">
           <div class="grid_item grid_item_img"><img src="images/Biosafari_Bild.jpg" alt="Gemüsekorb" /></div>
-          <div class="grid_item">
+          <div class="grid_item start_erklärung">
             <h4 class=" titel">SPIELEN UND PUNKTE SAMMELN</h4>
             <h3 class="untertitel">Unser Biosafari-Spiel</h3>
-            <p style="text-align: center;">Fang so viele Biofrüchte und Biogemüse wie möglich und sammle Treuepunkte für
+            <p>Fang so viele Biofrüchte und Biogemüse wie möglich und sammle Treuepunkte für
               deinen nächsten Einkauf!
               <br><br>
               Mit 100 Treuenpunkten erhälst du 10% auf deinen nächsten
@@ -76,7 +75,7 @@
       </div>
       <!-- Formular -->
       <section class="collect_points hidden">
-        <h4 class="titel" style="margin-top: 0%; padding-top: 5%;">ANMELDEFORMULAR</h4>
+        <h4 class="titel" id="titel_anmeldeformular">ANMELDEFORMULAR</h4>
         <h3 class="untertitel">Du willst Deine Treuepunkte nun einlösen?</h3>
         <p id="formular_beschrieb">Erstelle jetzt ein Konto, registriere dich bei BioTiful und löse deine Punkte ein!
         </p>
@@ -111,9 +110,9 @@
               <input placeholder="Foi2@#äüs$#°" type="password" name="password" id="password" required />
               <div class="error_message" id="password_error"></div>
             </div>
-            <button class="start_game" id="submit_button" type="submit" style="margin-top: 2vh;">
+            <button class="start_game" id="submit_button" type="submit">
               <span class="btn_text">Konto erstellen</span>
-              <div class="loader" id="form_spinner" style="display: none;"></div>
+              <div class="loader" id="form_spinner"></div>
             </button>
             <div id="success_message" class="success_message"></div>
           </form>
