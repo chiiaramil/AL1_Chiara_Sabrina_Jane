@@ -103,7 +103,7 @@ nav {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 9999; 
+  z-index: 9999;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -211,6 +211,17 @@ nav .logo {
   text-align: center;
   color: white;
   line-height: 1;
+}
+
+.start_erklärung {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 2rem 20px;
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 .hero_text h1,
