@@ -1,14 +1,3 @@
-.start_erklärung {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 40px 2rem 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: center;
-}
-
 /* Angebot-Section ist von 40px von oben entfernt und hat links und rechts ein Padding von 16px und der Text ist zentriert. */
 #angebot {
   padding-top: 40px;
