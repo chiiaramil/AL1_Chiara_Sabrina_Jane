@@ -95,6 +95,11 @@
   font-size: 18px;
 }
 
+#titel_anmeldeformular {
+  margin-top: 0%;
+  padding-top: 5%;
+}
+
 /* Form-Beschrieb-Zentrierung */
 #formular_beschrieb {
   text-align: center;
@@ -221,6 +226,7 @@ input:hover {
   display: inline-block;
   vertical-align: middle;
   animation: spin 1s linear infinite;
+  display: none;
 }
 
 @keyframes spin {
@@ -248,22 +254,24 @@ input:hover {
   transition: opacity 3s ease-out;
 }
 
+#submit_button {
+  margin-top: 2vh;
+}
+
 #submit_button.centered {
   display: none;
 }
 
-/* Hide form initially */
 .hidden {
   display: none;
 }
 
-/* Score warning effect */
 .score.warning {
   color: #ff0000;
   transition: color 0.2s ease;
 }
 
-/* Basket wiggle animation */
+/* Basket wiggle Animation bei Aufprall */
 @keyframes wiggle {
   0% {
     transform: translateX(-33%) rotate(0deg);
@@ -290,7 +298,7 @@ input:hover {
   animation: wiggle 0.3s ease-in-out;
 }
 
-/* Responsiveness */
+/* Responsive Layouts */
 @media (min-width: 800px) {
   #formular_beschrieb {
     margin-bottom: 6vh;
